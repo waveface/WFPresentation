@@ -1,0 +1,175 @@
+@import url(WFPreviewReset.css);
+html {
+  background-color: #f0f0f0;
+  -webkit-text-size-adjust: none;
+  font-size: 18px;
+  padding: 3em 2em 0px 2em; }
+
+body {
+  font: 1em/1.625em "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size-adjust: none;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  max-width: 100%;
+  text-align: justify;
+  text-justify: trim; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #202020;
+  padding-top: 1em; }
+
+h1 {
+  font-size: 2.125em;
+  margin-bottom: 0.765em; }
+
+h2 {
+  font-size: 1.9em;
+  margin-bottom: 0.855em; }
+
+h3 {
+  font-size: 1.7em;
+  margin-bottom: 0.956em; }
+
+h4 {
+  font-size: 1.4em;
+  margin-bottom: 1.161em; }
+
+h5, h6 {
+  font-size: 1.313em;
+  margin-bottom: 1.238em; }
+
+a {
+  color: #404040;
+  font-weight: bold;
+  text-decoration: underline; }
+  a:hover {
+    text-decoration: underline; }
+
+strong {
+  font-weight: bold; }
+
+em, dfn {
+  font-style: italic; }
+
+dfn {
+  font-weight: bold; }
+
+abbr, acronym {
+  border-bottom: 1px dotted #000; }
+
+address {
+  margin-top: 1.625em;
+  font-style: italic; }
+
+del {
+  color: #000; }
+
+caption {
+  text-align: center;
+  font-family: "Helvetica";
+  font-weight: bold;
+  color: #303030;
+  padding-bottom: 1em; }
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.625em;
+  border-collapse: collapse; }
+  table tr td {
+    border-bottom: 1px solid #dcdcdc;
+    border-spacing: 0px; }
+  table tr th {
+    font-weight: bold;
+    border-bottom: 2px solid #b4b4b4; }
+  table tr:last-child {
+    border-bottom: 2px solid #b4b4b4; }
+  table tr, table th, table td {
+    margin: 0;
+    padding: 0 1.625em 0 1em;
+    height: 2.25em; }
+  table tfoot {
+    font-style: italic; }
+
+pre, xmp, plaintext, listing {
+  font-family: "Courier", Courier, monospace;
+  overflow-x: auto;
+  display: block;
+  white-space: pre-wrap; }
+
+p {
+  padding: 0 0 0.8125em 0;
+  color: #111;
+  font-weight: 300; }
+  p + p {
+    text-indent: 1.625em; }
+  p .first:first-letter {
+    float: left;
+    font-family: baskerville,"palatino linotype",serif;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em;
+    margin-bottom: -0.2em;
+    padding: 0.2em 0.1em 0 0; }
+  p img {
+    float: left;
+    margin: 0.5em 0.8125em 0.8125em 0;
+    padding: 0; }
+  p img.right {
+    float: right;
+    margin: 0.5em  0 0.8125em 0.8125em; }
+
+blockquote {
+  padding: 0 1em 0 1em;
+  margin: 1em 0 1.625em 0;
+  font-family: georgia, serif;
+  font-style: italic;
+  border-left: 4px solid silver; }
+  blockquote > p {
+    margin: 0;
+    padding: 0; }
+
+pre, code, tt {
+  font: 1em "Courier", Courier, monospace;
+  line-height: 1.375em; }
+
+pre, code {
+  display: block;
+  margin: 1.625em 0;
+  white-space: pre; }
+
+pre code {
+  margin-left: 0em; }
+
+tt {
+  display: block;
+  margin: 1.625em 0; }
+
+ul, ol, dl {
+  list-style-position: outside;
+  margin: 0 0 1.625em 0; }
+
+dl dt {
+  font-weight: bold; }
+
+dl dd {
+  margin-left: 1.625em; }
+
+hr {
+  margin-bottom: 1.625em; }
+
+.oldbook {
+  font-family: "Warnock Pro","Goudy Old Style","Book Antiqua","Palatino",Georgia,serif; }
+
+.note {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 0.9em;
+  margin: 0.1em;
+  color: #333; }
+
+.mono {
+  font-family: "Courier", Courier, monospace; }
