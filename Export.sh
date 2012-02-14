@@ -6,7 +6,8 @@ COMMIT_SHA="`git rev-parse HEAD`"
 
 cp -r . $TEMP_DIR
 cd $TEMP_DIR
-ls -la
+
+sass WFPreview.scss WFPreview.css
 
 rm -vrf ".git"
 
