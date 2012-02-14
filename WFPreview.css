@@ -139,7 +139,7 @@ pre, code, tt {
 pre, code {
   display: block;
   margin: 1.625em 0;
-  white-space: pre; }
+  white-space: pre-wrap; }
 
 pre code {
   margin-left: 0em; }
