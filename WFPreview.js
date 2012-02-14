@@ -1,0 +1,1 @@
+if (navigator.userAgent.match(/iPad/)) window.setTimeout(function(){document.location = document.location; }, 2000);

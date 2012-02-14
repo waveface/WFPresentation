@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+	<head>
+		<meta name="generator" content="HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.6), see www.w3.org">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<title>$TITLE</title>
+		<link rel="stylesheet" href="WFPreview.css" />
+		<script type="text/javascript" src="WFPreview.js"></script>
+	</head>
+	
+	<body>
+	
+		<!--	? -->
+		
+<div itemscope="" itemtype="http://schema.org/Article" nodeindex=
+"29">
+<div id="mainbar" nodeindex="33">
+<div class="question" id="question" data-questionid="7878503"
+nodeindex="34">
+<div class="everyonelovesstackoverflow" id="adzerk1" nodeindex=
+"35"></div>
+<table nodeindex="38" class="ril_layoutTable">
+<tr nodeindex="37">
+<td class="votecell" nodeindex="36">
+<div class="vote" nodeindex="39"><a class="vote-up-off" title=
+"This question shows research effort; it is useful and clear (click again to undo)"
+nodeindex="216">up vote</a> <span class="vote-count-post"
+nodeindex="217">3</span> <a class="vote-down-off" title=
+"This question does not show any research effort; it is unclear or not useful (click again to undo)"
+nodeindex="218">down vote</a> <a class="star-off" href="#" title=
+"This is a favorite question (click again to undo)" nodeindex=
+"219">favorite</a>
+<div class="favoritecount" nodeindex="40"><b nodeindex=
+"220">1</b></div>
+<a id="gp-share-7878503" class="gp-share" title=
+"share link to this question on Google+" nodeindex="222" name=
+"gp-share-7878503">share [g+]</a> <a id="fb-share-7878503" class=
+"fb-share" title="share link to this question on Facebook"
+nodeindex="223" name="fb-share-7878503">share [fb]</a> <a id=
+"twitter-share-7878503" class="twitter-share" title=
+"share link to this question on Twitter" nodeindex="224" name=
+"twitter-share-7878503">share [tw]</a></div>
+</td>
+<td class="postcell" nodeindex="41">
+<div nodeindex="42">
+<div class="post-text" itemprop="description" nodeindex="43">
+<p nodeindex="44">I created a veriadic Category method on NSArray
+to filter it into a dictionary with given blocks and keys</p>
+<pre nodeindex="45">
+<code nodeindex="225">typedef BOOL (^TestBlock)(id element);
+- (NSDictionary *)dictionaryByFilteringWithBlocksAndKeys:(TestBlock)firstBlock, id firstKey,... NS_REQUIRES_NIL_TERMINATION;
+</code>
+</pre>
+<p nodeindex="46">Usage:</p>
+<pre nodeindex="47">
+<code nodeindex=
+"226">NSArray *array = [NSArray arrayWithObjects:@"a", @"aa", @"ab", @"cc", @"cd", @"dd", nil];
+NSDictionary *dict = [array dictionaryByFilteringWithBlocksAndKeys:
+                                    ^BOOL(id element) {return [element hasPrefix:@"a"];},@"a",
+                                    ^BOOL(id element) {return [element hasPrefix:@"c"];},@"c", 
+         nil];
+</code>
+</pre>
+<p nodeindex="48">It works quite good, but I wonder, how I can
+check, if a given block (other then the first) has the typedef'ed
+signature.</p>
+<p nodeindex="49">I get the blocks from the <code nodeindex=
+"227">va_list</code> with <code nodeindex="228">TestBlock block =
+va_arg(args, TestBlock);</code>, but it also eats non-sense blocks
+like</p>
+<pre nodeindex="50">
+<code nodeindex=
+"229">NSDictionary *dict = [array dictionaryByFilteringWithBlocksAndKeys:
+                                    ^BOOL(id element) {return [element hasPrefix:@"a"];}, @"a", 
+                                    ^(id element) {;}, @"c", 
+                          nil];
+</code>
+</pre>
+<p nodeindex="51">without complaining.</p>
+<p nodeindex="52"><strong nodeindex="230">Is there a way to check,
+if a block has the same signature as a typedef at
+runtime?</strong></p>
+</div>
+<div class="post-taglist" nodeindex="53"><a href=
+"/questions/tagged/objective-c" class="post-tag" title=
+"show questions tagged 'objective-c'" rel="tag" nodeindex=
+"231">objective-c</a></div>
+<table class="ril_layoutTable" nodeindex="56"></table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="answers" nodeindex="75"><a name="tab-top" nodeindex="232"
+id="tab-top"></a> <a name="7878544" nodeindex="233"></a>
+<div id="answer-7878544" class="answer" data-answerid="7878544"
+nodeindex="80">
+<table nodeindex="83" class="ril_layoutTable">
+<tr nodeindex="82">
+<td class="votecell" nodeindex="81">
+<div class="vote" nodeindex="84"><a class="vote-up-off" title=
+"This answer is useful (click again to undo)" nodeindex="235">up
+vote</a> <span class="vote-count-post" nodeindex="236">4</span>
+<a class="vote-down-off" title=
+"This answer is not useful (click again to undo)" nodeindex=
+"237">down vote</a> <span class="vote-accepted-on" title=
+"The question owner accepted this as the best answer Oct 25 '11 at 18:32"
+nodeindex="238">accepted</span></div>
+</td>
+<td class="answercell" nodeindex="85">
+<div class="post-text" nodeindex="86">
+<p nodeindex="87">No, there is no way to check. This would require
+new syntax in the compiler. Effectively, you want "these arguments
+are optional/variadic, but must follow this type pattern".</p>
+<p nodeindex="88">Also note that treating a specifically typed
+argument list as a <code nodeindex="239">va_list</code> is not
+technically correct, either. It will mostly work by coincidence on
+most ABIs, but not all. (Not that you are doing that, but it often
+comes up in these contexts).</p>
+<blockquote nodeindex="90">
+<p nodeindex="89">can you give me an example of what you mean with
+specially typed argument list?</p>
+</blockquote>
+<p nodeindex="91">Sure, consider:</p>
+<pre nodeindex="92">
+<code nodeindex="240">id objc_msgSend(id,SEL,...);
+</code>
+</pre>
+<p nodeindex="93">That is a var-args argument list. Now, you might
+think you can do this:</p>
+<pre nodeindex="94">
+<code nodeindex=
+"241">objc_msgSend(mutableArray, @selector(addObject:), anObject);
+</code>
+</pre>
+<p nodeindex="95">But, technically, you can't. varargs are not
+compatible with specifically typed argument lists, by the C spec.
+Thus, you need to typecast:</p>
+<pre nodeindex="96">
+<code nodeindex="242">void (*func)(id,SEL,id) = objc_msgSend;
+func(mutableArray, @selector(addObject:), anObject);
+</code>
+</pre>
+<p nodeindex="97">That is, if the called API is <em nodeindex=
+"243">not</em> also varargs, then the call site must be compiled
+against a declaration of the call that has full argument type
+info...</p>
+</div>
+<table class="ril_layoutTable" nodeindex="100"></table>
+</td>
+</tr>
+</table>
+</div>
+<a name="new-answer" nodeindex="244" id="new-answer"></a></div>
+</div>
+<div id="prettify-lang" nodeindex="205">lang-c</div>
+</div>
+
+	</body>
+
+</html>
