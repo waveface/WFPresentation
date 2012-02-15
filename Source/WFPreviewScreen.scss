@@ -20,7 +20,7 @@ html {
 	
 	font-size: 1.25em;
 	
-	padding: 3em 2em 0px 2em;
+	padding: 3em 2em 2em 2em;
 
 }
 
@@ -38,8 +38,10 @@ body {
 
 	max-width: 100%;
 	
+/*
 	text-align: justify;
 	text-justify: trim;
+*/
 
 }
 
@@ -233,15 +235,21 @@ p {
 	
 	}
 	
-	img {
+}
+
+p img, a img {
 	
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		
-		border: 4px solid white;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	
-	}
+	border: 4px solid white;
+	
+	width: 100% !important;
+	height: auto !important;
+	
+	margin-top: 1em;
+	margin-bottom: 1em;
 
 }
 
