@@ -1,0 +1,1 @@
+//	if (navigator.userAgent.match(/iPad/) && document.location.href.match(/Plex\.local/ig)) window.setTimeout(function(){document.location = document.location; }, 2000);
