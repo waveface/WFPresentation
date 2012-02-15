@@ -4,6 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3/box-shadow";
 
 @function brightness($n) {
   @return rgb($n, $n, $n);
@@ -250,6 +251,8 @@ p img, a img {
 	
 	margin-top: 1em;
 	margin-bottom: 1em;
+	
+	@include box-shadow(rgba(0, 0, 0, .125) 0px 1px 2px);
 
 }
 
