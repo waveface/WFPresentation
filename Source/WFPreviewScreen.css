@@ -253,9 +253,7 @@ p img, a img {
   -webkit-box-shadow: rgba(0, 0, 0, 0.125) 0px 1px 2px;
   -o-box-shadow: rgba(0, 0, 0, 0.125) 0px 1px 2px;
   box-shadow: rgba(0, 0, 0, 0.125) 0px 1px 2px;
-  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.125) 0px 1px 2px);
-  -webkit-box-shadow: none !important;
-  -webkit-appearance: listitem !important;
+  background-color: white;
   max-width: 100% !important;
   width: auto !important;
   height: auto !important;
@@ -263,7 +261,7 @@ p img, a img {
   margin-bottom: 1em;
 }
 
-/* line 264, WFPreviewScreen.scss */
+/* line 266, WFPreviewScreen.scss */
 blockquote {
   padding: 0 1em 0 1em;
   margin: 1em 0 1.625em 0;
@@ -271,63 +269,63 @@ blockquote {
   font-style: italic;
   border-left: 4px solid silver;
 }
-/* line 274, WFPreviewScreen.scss */
+/* line 276, WFPreviewScreen.scss */
 blockquote > p {
   margin: 0;
   padding: 0;
 }
 
-/* line 283, WFPreviewScreen.scss */
+/* line 285, WFPreviewScreen.scss */
 pre, code, tt {
   font: 1em "Courier", Courier, monospace;
   line-height: 1.375em;
 }
 
-/* line 290, WFPreviewScreen.scss */
+/* line 292, WFPreviewScreen.scss */
 pre, code {
   display: block;
   margin: 1.625em 0;
   white-space: pre-wrap;
 }
 
-/* line 298, WFPreviewScreen.scss */
+/* line 300, WFPreviewScreen.scss */
 pre code {
   margin-left: 0em;
 }
 
-/* line 304, WFPreviewScreen.scss */
+/* line 306, WFPreviewScreen.scss */
 tt {
   display: block;
   margin: 1.625em 0;
 }
 
-/* line 310, WFPreviewScreen.scss */
+/* line 312, WFPreviewScreen.scss */
 ul, ol, dl {
   list-style-position: outside;
   margin: 0 0 1.625em 0;
 }
 
-/* line 317, WFPreviewScreen.scss */
+/* line 319, WFPreviewScreen.scss */
 dl dt {
   font-weight: bold;
 }
 
-/* line 323, WFPreviewScreen.scss */
+/* line 325, WFPreviewScreen.scss */
 dl dd {
   margin-left: 1.625em;
 }
 
-/* line 331, WFPreviewScreen.scss */
+/* line 333, WFPreviewScreen.scss */
 hr {
   margin-bottom: 1.625em;
 }
 
-/* line 339, WFPreviewScreen.scss */
+/* line 341, WFPreviewScreen.scss */
 .oldbook {
   font-family: "Warnock Pro","Goudy Old Style","Book Antiqua","Palatino",Georgia,serif;
 }
 
-/* line 340, WFPreviewScreen.scss */
+/* line 342, WFPreviewScreen.scss */
 .note {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
@@ -336,7 +334,7 @@ hr {
   color: #333;
 }
 
-/* line 341, WFPreviewScreen.scss */
+/* line 343, WFPreviewScreen.scss */
 .mono {
   font-family: "Courier", Courier, monospace;
 }
