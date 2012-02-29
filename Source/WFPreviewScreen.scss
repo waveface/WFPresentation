@@ -19,11 +19,27 @@ html {
 	background-color: brightness(240);
 	-webkit-text-size-adjust: none;
 	
-	font-size: 1.25em;
-	
 	padding: 3em 2em 2em 2em;
 
 }
+
+
+html {
+
+	font-size: 14pt;
+
+}
+
+@media screen and (max-width: 320px) {
+	
+	html {
+	
+		font-size: 12pt;
+	
+	}
+
+}
+
 
 
 
