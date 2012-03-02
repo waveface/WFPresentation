@@ -108,6 +108,49 @@ h5, h6 {
 
 }
 
+.header {
+
+	h1 {
+	
+		padding: 0;
+		margin: 0;
+		
+		font-size: 1.8em;
+		line-height: 1.35em;
+		
+		//	color: brightness(80);
+		
+		color: rgb(198, 107, 75);
+		
+		font-weight: bold;
+		
+		font-family: "HelveticaNeue-CondensedBold", "HelveticaNeue", "Helvetica Neue", "Arial", sans-serif;
+	
+	}
+	
+	h2 {
+	
+		padding: 0;
+		margin: 0;
+		
+		font-size: 0.85em;
+		
+		font-family: "HelveticaNeue-Light", "HelveticaNeue", "Helvetica Neue", sans-serif;
+		
+		color: brightness(146);
+		
+		+ h1 {
+		
+			padding-top: 0.25em;
+		
+		}
+	
+	}
+	
+	padding-bottom: 2em;
+	
+}
+
 a {
 
 	color: brightness(64);
@@ -273,10 +316,9 @@ p img, a img {
 	width: auto !important;
 	height: auto !important;
 	
-	margin-top: 1em;
-	margin-bottom: 1em;
+	margin-top: 3em;
+	margin-bottom: 3em;
 	
-
 }
 
 blockquote {

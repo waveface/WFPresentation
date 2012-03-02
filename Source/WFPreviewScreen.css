@@ -138,48 +138,75 @@ h5, h6 {
 }
 
 /* line 111, WFPreviewScreen.scss */
+.header {
+  padding-bottom: 2em;
+}
+/* line 113, WFPreviewScreen.scss */
+.header h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.8em;
+  line-height: 1.35em;
+  color: #c66b4b;
+  font-weight: bold;
+  font-family: "HelveticaNeue-CondensedBold", "HelveticaNeue", "Helvetica Neue", "Arial", sans-serif;
+}
+/* line 131, WFPreviewScreen.scss */
+.header h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 0.85em;
+  font-family: "HelveticaNeue-Light", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  color: #929292;
+}
+/* line 142, WFPreviewScreen.scss */
+.header h2 + h1 {
+  padding-top: 0.25em;
+}
+
+/* line 154, WFPreviewScreen.scss */
 a {
   color: #404040;
   font-weight: bold;
   text-decoration: underline;
 }
-/* line 117, WFPreviewScreen.scss */
+/* line 160, WFPreviewScreen.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 125, WFPreviewScreen.scss */
+/* line 168, WFPreviewScreen.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 131, WFPreviewScreen.scss */
+/* line 174, WFPreviewScreen.scss */
 em, dfn {
   font-style: italic;
 }
 
-/* line 137, WFPreviewScreen.scss */
+/* line 180, WFPreviewScreen.scss */
 dfn {
   font-weight: bold;
 }
 
-/* line 143, WFPreviewScreen.scss */
+/* line 186, WFPreviewScreen.scss */
 abbr, acronym {
   border-bottom: 1px dotted #000;
 }
 
-/* line 149, WFPreviewScreen.scss */
+/* line 192, WFPreviewScreen.scss */
 address {
   margin-top: 1.625em;
   font-style: italic;
 }
 
-/* line 156, WFPreviewScreen.scss */
+/* line 199, WFPreviewScreen.scss */
 del {
   color: #000;
 }
 
-/* line 162, WFPreviewScreen.scss */
+/* line 205, WFPreviewScreen.scss */
 caption {
   text-align: center;
   font-family: "Helvetica";
@@ -188,39 +215,39 @@ caption {
   padding-bottom: 1em;
 }
 
-/* line 173, WFPreviewScreen.scss */
+/* line 216, WFPreviewScreen.scss */
 table {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.625em;
   border-collapse: collapse;
 }
-/* line 183, WFPreviewScreen.scss */
+/* line 226, WFPreviewScreen.scss */
 table tr td {
   border-bottom: 1px solid #dcdcdc;
   border-spacing: 0px;
 }
-/* line 190, WFPreviewScreen.scss */
+/* line 233, WFPreviewScreen.scss */
 table tr th {
   font-weight: bold;
   border-bottom: 2px solid #b4b4b4;
 }
-/* line 197, WFPreviewScreen.scss */
+/* line 240, WFPreviewScreen.scss */
 table tr:last-child {
   border-bottom: 2px solid #b4b4b4;
 }
-/* line 205, WFPreviewScreen.scss */
+/* line 248, WFPreviewScreen.scss */
 table tr, table th, table td {
   margin: 0;
   padding: 0 1.625em 0 1em;
   height: 2.25em;
 }
-/* line 213, WFPreviewScreen.scss */
+/* line 256, WFPreviewScreen.scss */
 table tfoot {
   font-style: italic;
 }
 
-/* line 221, WFPreviewScreen.scss */
+/* line 264, WFPreviewScreen.scss */
 pre, xmp, plaintext, listing {
   font-family: "Courier", Courier, monospace;
   overflow-x: auto;
@@ -228,21 +255,21 @@ pre, xmp, plaintext, listing {
   white-space: pre-wrap;
 }
 
-/* line 231, WFPreviewScreen.scss */
+/* line 274, WFPreviewScreen.scss */
 p {
   margin-bottom: 0.8125em;
   color: #111;
   font-weight: 300;
 }
-/* line 237, WFPreviewScreen.scss */
+/* line 280, WFPreviewScreen.scss */
 p + p {
   text-indent: 1.625em;
 }
-/* line 241, WFPreviewScreen.scss */
+/* line 284, WFPreviewScreen.scss */
 p + p img {
   text-indent: -1.625em;
 }
-/* line 249, WFPreviewScreen.scss */
+/* line 292, WFPreviewScreen.scss */
 p .first:first-letter {
   float: left;
   font-family: baskerville,"palatino linotype",serif;
@@ -253,7 +280,7 @@ p .first:first-letter {
   padding: 0.2em 0.1em 0 0;
 }
 
-/* line 257, WFPreviewScreen.scss */
+/* line 300, WFPreviewScreen.scss */
 p img, a img {
   display: block;
   margin-left: auto;
@@ -267,11 +294,11 @@ p img, a img {
   max-width: 100% !important;
   width: auto !important;
   height: auto !important;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
-/* line 282, WFPreviewScreen.scss */
+/* line 324, WFPreviewScreen.scss */
 blockquote {
   padding: 0 1em 0 1em;
   margin: 1em 0 1.625em 0;
@@ -279,63 +306,63 @@ blockquote {
   font-style: italic;
   border-left: 4px solid silver;
 }
-/* line 292, WFPreviewScreen.scss */
+/* line 334, WFPreviewScreen.scss */
 blockquote > p {
   margin: 0;
   padding: 0;
 }
 
-/* line 301, WFPreviewScreen.scss */
+/* line 343, WFPreviewScreen.scss */
 pre, code, tt {
   font: 1em "Courier", Courier, monospace;
   line-height: 1.375em;
 }
 
-/* line 308, WFPreviewScreen.scss */
+/* line 350, WFPreviewScreen.scss */
 pre, code {
   display: block;
   margin: 1.625em 0;
   white-space: pre-wrap;
 }
 
-/* line 316, WFPreviewScreen.scss */
+/* line 358, WFPreviewScreen.scss */
 pre code {
   margin-left: 0em;
 }
 
-/* line 322, WFPreviewScreen.scss */
+/* line 364, WFPreviewScreen.scss */
 tt {
   display: block;
   margin: 1.625em 0;
 }
 
-/* line 328, WFPreviewScreen.scss */
+/* line 370, WFPreviewScreen.scss */
 ul, ol, dl {
   list-style-position: outside;
   margin: 0 0 1.625em 0;
 }
 
-/* line 335, WFPreviewScreen.scss */
+/* line 377, WFPreviewScreen.scss */
 dl dt {
   font-weight: bold;
 }
 
-/* line 341, WFPreviewScreen.scss */
+/* line 383, WFPreviewScreen.scss */
 dl dd {
   margin-left: 1.625em;
 }
 
-/* line 349, WFPreviewScreen.scss */
+/* line 391, WFPreviewScreen.scss */
 hr {
   margin-bottom: 1.625em;
 }
 
-/* line 357, WFPreviewScreen.scss */
+/* line 399, WFPreviewScreen.scss */
 .oldbook {
   font-family: "Warnock Pro","Goudy Old Style","Book Antiqua","Palatino",Georgia,serif;
 }
 
-/* line 358, WFPreviewScreen.scss */
+/* line 400, WFPreviewScreen.scss */
 .note {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
@@ -344,7 +371,7 @@ hr {
   color: #333;
 }
 
-/* line 359, WFPreviewScreen.scss */
+/* line 401, WFPreviewScreen.scss */
 .mono {
   font-family: "Courier", Courier, monospace;
 }
