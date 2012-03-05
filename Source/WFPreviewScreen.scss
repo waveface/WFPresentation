@@ -139,11 +139,11 @@ h5, h6 {
 		
 		color: brightness(146);
 		
-		+ h1 {
-		
-			padding-top: 0.25em;
-		
-		}
+	}
+	
+	h2 + h1, h1 + h2 {
+	
+		padding-top: 0.25em;
 	
 	}
 	

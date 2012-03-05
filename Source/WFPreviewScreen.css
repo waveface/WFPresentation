@@ -159,8 +159,8 @@ h5, h6 {
   font-family: "HelveticaNeue-Light", "HelveticaNeue", "Helvetica Neue", sans-serif;
   color: #929292;
 }
-/* line 142, WFPreviewScreen.scss */
-.header h2 + h1 {
+/* line 144, WFPreviewScreen.scss */
+.header h2 + h1, .header h1 + h2 {
   padding-top: 0.25em;
 }
 
