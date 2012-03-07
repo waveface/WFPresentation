@@ -13,6 +13,7 @@
 $FONT_MONOSPACE: "Courier", Courier, monospace;
 $FONT_SANS_SERIF_BOOK: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 $FONT_SANS_SERIF_TITLE: "Helvetica";
+$FONT_SERIF_BOOK: "Georgia", serif;
 
 html {
 
@@ -47,7 +48,7 @@ html {
 
 body {
 
-	font: 1em/1.625em $FONT_SANS_SERIF_BOOK;
+	font: 1em/1.625em $FONT_SERIF_BOOK;
 	font-size-adjust: none;
 	font-style: normal;
 	font-variant: normal;
