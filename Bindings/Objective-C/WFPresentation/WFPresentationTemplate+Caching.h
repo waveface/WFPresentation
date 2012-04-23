@@ -11,5 +11,6 @@
 @interface WFPresentationTemplate (Caching)
 
 + (id) cachedTemplateNamed:(NSString *)name;
++ (void) cacheTemplate:(WFPresentationTemplate *)template withName:(NSString *)name;
 
 @end

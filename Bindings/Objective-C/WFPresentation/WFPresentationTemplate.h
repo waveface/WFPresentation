@@ -12,8 +12,11 @@
 
 + (id) templateNamed:(NSString *)name;
 
-- (NSString *) documentWithReplacementVariables:(NSDictionary *)replacementVariables;
+- (id) initWithContentsOfFileAtURL:(NSURL *)fileURL baseURL:(NSURL *)baseURL;
 
-@property (nonatomic, readonly, strong) NUSLR* baseURL;
+- (NSString *) documentWithReplacementVariables:(NSDictionary *)variablesToValues;
+
+@property (nonatomic, readonly, strong) NSURL *fileURL;
+@property (nonatomic, readonly, strong) NSURL *baseURL;
 
 @end

@@ -10,6 +10,8 @@
 
 @interface WFPresentationTemplate (SubclassEyesOnly)
 
-+ (id) newTemplateNamed:(NSString *)name usingBaseURL:(NSURL **)baseURL;
++ (NSURL *) templateBaseURL;
+
+@property (nonatomic, readonly, strong) NSString *contents;
 
 @end
