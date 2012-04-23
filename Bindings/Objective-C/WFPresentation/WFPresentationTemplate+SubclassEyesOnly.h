@@ -10,6 +10,6 @@
 
 @interface WFPresentationTemplate (SubclassEyesOnly)
 
-+ (NSString *) bundlePathForTemplateNamed:(NSString *)name;
++ (id) newTemplateNamed:(NSString *)name usingBaseURL:(NSURL **)baseURL;
 
 @end

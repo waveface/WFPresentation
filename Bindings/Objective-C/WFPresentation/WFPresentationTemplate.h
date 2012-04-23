@@ -11,6 +11,9 @@
 @interface WFPresentationTemplate : NSObject
 
 + (id) templateNamed:(NSString *)name;
+
 - (NSString *) documentWithReplacementVariables:(NSDictionary *)replacementVariables;
+
+@property (nonatomic, readonly, strong) NUSLR* baseURL;
 
 @end
