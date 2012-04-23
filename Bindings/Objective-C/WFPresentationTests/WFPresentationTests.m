@@ -10,14 +10,14 @@
 #import "WFPresentation.h"
 
 
-@interface WFPresentationTemplate (WFPresentationTestsOverride)
+@interface WFPresentationTemplate_WFPresentationTestsOverride : WFPresentationTemplate
 
 + (NSURL *) templateBaseURL;
 
 @end
 
 
-@implementation WFPresentationTemplate (WFPresentationTestsOverride)
+@implementation WFPresentationTemplate_WFPresentationTestsOverride
 
 + (NSURL *) templateBaseURL {
 
@@ -36,13 +36,9 @@
 @end
 
 
+#define WFPresentationTemplate WFPresentationTemplate_WFPresentationTestsOverride
+
 @implementation WFPresentationTests
-
-+ (void) initialize {
-
-	//	?
-
-}
 
 - (void) testInstantiation {
 
