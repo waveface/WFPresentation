@@ -14,7 +14,8 @@ $FONT_MONOSPACE: "Courier", Courier, monospace;
 $FONT_SANS_SERIF_BOOK: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 $FONT_SANS_SERIF_TITLE: "Helvetica";
 $FONT_SERIF_BOOK: "Georgia", serif;
-$FONT_SANS_SERIF_BOOK_DISCRETE: "HiraKakuPro-W3", sans-serif;
+
+$FONT_SANS_SERIF_BOOK_DISCRETE: "Fontin Sans Bold", "FontinSans-Bold", "HiraKakuProN-W6", "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro W6", "STHeitiTC-Medium", "STHeitiSC-Medium", sans-serif;
 
 html {
 
@@ -395,6 +396,8 @@ hr {
 
 html.discrete {
 
+	background-color: brightness(242);
+
 	padding: 0px 0px 0px 0px;
 	font-size: 17.5px;
 	
@@ -403,7 +406,7 @@ html.discrete {
 	
 	body {
 	
-		margin: 0px 32px 20px 32px;
+		margin: 4px 4px 4px 4px;
 		
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
@@ -419,13 +422,13 @@ html.discrete {
 			
 			&:first-child {
 			
-				margin-top: 20px;
+				padding-top: 20px;
 			
 			}
 		
 			&:last-child {
 			
-				margin-bottom: 20px;
+				padding-bottom: 20px;
 			
 			}
 			
@@ -441,6 +444,14 @@ html.discrete {
 				-moz-box-flex: 1;
 				box-flex: 1;
 				
+				padding-left: 20px;
+				padding-right: 20px;
+				
+				p {
+				
+					color: rgb(77, 77, 77);
+				
+				}
 				
 				.textContainer {
 				
@@ -452,6 +463,8 @@ html.discrete {
 					display: -webkit-box;
 					-webkit-line-clamp: 0;
 					-webkit-box-orient: vertical;
+					
+					width: 100%;
 
 				}
 			
@@ -464,9 +477,16 @@ html.discrete {
 		}
 		
 		.previewContainer {
-					
-			font: 16px/20px "Palatino";
+		
+			background: url(WAPreviewStripePattern.png) repeat repeat;
 			
+			margin-top: 16px;
+			margin-left: 12px;
+			margin-right: 12px;
+			
+			padding: 8px;
+			
+			font: 16px/20px "Palatino";
 			
 			.imageContainer {
 			
@@ -480,14 +500,6 @@ html.discrete {
 				padding-right: 4px;
 				
 				display: table-cell;
-				
-				&:after {
-					
-					font-style: italic;
-					content: url(WFLinkIndicator.png);
-					display: inline-block;
-				
-				}
 				
 				img {
 				
@@ -517,23 +529,42 @@ html.discrete {
 		
 			h1 {
 		
-				font: 18px/24px "HoeflerText";
+				font: 18px/24px "HoeflerText-Black", "Hoefler Text Black", "HoeflerText", "Hoefler Text", "HiraMinProN-W6", sans-serif;
 				padding: 0px;
 				margin: 0px;
+				
+				overflow: hidden;
+				text-overflow: ellipsis;
+				height: 24px;
+				-webkit-line-clamp: 1;
 			
 			}
 			
-			h2 {
+			h2, span.provider {
 			
-				font: 16px/20px "HelveticaNeue-CondensedBold";
+				font: 16px/20px "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "HiraKakuProN-W6";
 			
 				display: inline;
 				padding: 0px;
 				margin: 0px;
+				
+				&:after {
+				
+					content: " • ";
+				
+				}
+				
+				&:empty:after {
+				
+					content: "";
+				
+				}
 			
 			}
 			
 			p {
+			
+				font-family: "Palatino-Roman", "HiraMinProN-W3", serif;
 
 				display: inline;			
 			
@@ -549,8 +580,60 @@ html.discrete {
 			p {
 			
 				margin-bottom: 0px;
+				margin-right: 12px;
+				
+				color: rgb(160, 160, 160);
 			
 			}
+		
+		}
+	
+	}
+	
+	&.no-body {
+	
+		.content {
+		
+			display: none;
+		
+		}
+		
+		.previewContainer {
+	
+			-webkit-box-flex: 1;
+			-moz-box-flex: 1;
+			box-flex: 1;
+			
+			width: auto;
+			
+			.textContainer {
+			
+				display: block;
+				
+				p {
+				
+					display: -webkit-box;
+				
+				}
+			
+			}
+		
+		}
+	
+	}
+
+	&.no-preview {
+	
+		.content {
+		
+			background: url(WAPreviewQuoteBackdrop.png) top left no-repeat;
+			background-position: 0px 12px;
+		
+		}
+	
+		.previewContainer {
+		
+			display: none;
 		
 		}
 	
