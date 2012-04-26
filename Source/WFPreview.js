@@ -33,7 +33,7 @@
 			var lineHeight = parseFloat(computedStyle(content, "lineHeight").match(/(\d+)px/)[1], 10);
 			var clientHeight = content.clientHeight;
 			
-			var desiredHeight = Math.max(lineHeight, clientHeight - (clientHeight % lineHeight));
+			var desiredHeight = Math.max(lineHeight, clientHeight - (clientHeight % lineHeight) - lineHeight);
 			
 			contentTextContainer.style.height = desiredHeight + "px";
 			contentTextContainer.style.webkitLineClamp = desiredHeight / lineHeight;

@@ -367,7 +367,7 @@ html.discrete {
 }
 /* line 407, WFPreviewScreen.scss */
 html.discrete body {
-  margin: 0px 32px 20px 32px;
+  margin: 4px 4px 4px 4px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   display: -moz-box;
@@ -384,11 +384,11 @@ html.discrete body > div {
 }
 /* line 423, WFPreviewScreen.scss */
 html.discrete body > div:first-child {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 /* line 429, WFPreviewScreen.scss */
 html.discrete body > div:last-child {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 /* line 439, WFPreviewScreen.scss */
 html.discrete body > div.content {
@@ -396,8 +396,14 @@ html.discrete body > div.content {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-/* line 447, WFPreviewScreen.scss */
+/* line 450, WFPreviewScreen.scss */
+html.discrete body > div.content p {
+  color: #4d4d4d;
+}
+/* line 456, WFPreviewScreen.scss */
 html.discrete body > div.content .textContainer {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -407,14 +413,16 @@ html.discrete body > div.content .textContainer {
   -webkit-box-orient: vertical;
   width: 100%;
 }
-/* line 470, WFPreviewScreen.scss */
+/* line 479, WFPreviewScreen.scss */
 html.discrete body .previewContainer {
   background: url(WAPreviewStripePattern.png) repeat repeat;
   margin-top: 16px;
+  margin-left: 12px;
+  margin-right: 12px;
   padding: 8px;
   font: 16px/20px "Palatino";
 }
-/* line 479, WFPreviewScreen.scss */
+/* line 491, WFPreviewScreen.scss */
 html.discrete body .previewContainer .imageContainer {
   float: left;
   max-width: 64px;
@@ -423,16 +431,16 @@ html.discrete body .previewContainer .imageContainer {
   padding-right: 4px;
   display: table-cell;
 }
-/* line 492, WFPreviewScreen.scss */
+/* line 504, WFPreviewScreen.scss */
 html.discrete body .previewContainer .imageContainer img {
   vertical-align: bottom;
   max-width: 100%;
 }
-/* line 497, WFPreviewScreen.scss */
+/* line 509, WFPreviewScreen.scss */
 html.discrete body .previewContainer .imageContainer img[src=""] {
   display: none;
 }
-/* line 508, WFPreviewScreen.scss */
+/* line 520, WFPreviewScreen.scss */
 html.discrete body .previewContainer .textContainer {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -440,7 +448,7 @@ html.discrete body .previewContainer .textContainer {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-/* line 518, WFPreviewScreen.scss */
+/* line 530, WFPreviewScreen.scss */
 html.discrete body .previewContainer h1 {
   font: 18px/24px "HoeflerText-Black", "Hoefler Text Black", "HoeflerText", "Hoefler Text", "HiraMinProN-W6", sans-serif;
   padding: 0px;
@@ -450,55 +458,62 @@ html.discrete body .previewContainer h1 {
   height: 24px;
   -webkit-line-clamp: 1;
 }
-/* line 531, WFPreviewScreen.scss */
+/* line 543, WFPreviewScreen.scss */
 html.discrete body .previewContainer h2, html.discrete body .previewContainer span.provider {
   font: 16px/20px "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "HiraKakuProN-W6";
   display: inline;
   padding: 0px;
   margin: 0px;
 }
-/* line 539, WFPreviewScreen.scss */
+/* line 551, WFPreviewScreen.scss */
 html.discrete body .previewContainer h2:after, html.discrete body .previewContainer span.provider:after {
   content: " • ";
 }
-/* line 545, WFPreviewScreen.scss */
+/* line 557, WFPreviewScreen.scss */
 html.discrete body .previewContainer h2:empty:after, html.discrete body .previewContainer span.provider:empty:after {
   content: "";
 }
-/* line 553, WFPreviewScreen.scss */
+/* line 565, WFPreviewScreen.scss */
 html.discrete body .previewContainer p {
   font-family: "Palatino-Roman", "HiraMinProN-W3", serif;
   display: inline;
 }
-/* line 563, WFPreviewScreen.scss */
+/* line 575, WFPreviewScreen.scss */
 html.discrete body .footer {
   font: 11px/16px "HelveticaNeue-Bold";
   text-align: right;
 }
-/* line 568, WFPreviewScreen.scss */
+/* line 580, WFPreviewScreen.scss */
 html.discrete body .footer p {
   margin-bottom: 0px;
+  margin-right: 12px;
+  color: #a0a0a0;
 }
-/* line 580, WFPreviewScreen.scss */
+/* line 595, WFPreviewScreen.scss */
 html.discrete.no-body .content {
   display: none;
 }
-/* line 586, WFPreviewScreen.scss */
+/* line 601, WFPreviewScreen.scss */
 html.discrete.no-body .previewContainer {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
-  width: 100%;
+  width: auto;
 }
-/* line 594, WFPreviewScreen.scss */
+/* line 609, WFPreviewScreen.scss */
 html.discrete.no-body .previewContainer .textContainer {
   display: block;
 }
-/* line 598, WFPreviewScreen.scss */
+/* line 613, WFPreviewScreen.scss */
 html.discrete.no-body .previewContainer .textContainer p {
   display: -webkit-box;
 }
-/* line 612, WFPreviewScreen.scss */
+/* line 627, WFPreviewScreen.scss */
+html.discrete.no-preview .content {
+  background: url(WAPreviewQuoteBackdrop.png) top left no-repeat;
+  background-position: 0px 12px;
+}
+/* line 634, WFPreviewScreen.scss */
 html.discrete.no-preview .previewContainer {
   display: none;
 }
