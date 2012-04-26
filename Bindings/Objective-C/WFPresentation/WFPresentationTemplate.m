@@ -45,7 +45,7 @@
 	static NSURL *url = nil;
 	dispatch_once(&onceToken, ^{
 	
-		url = [[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:NSStringFromClass([self class])];
+		url = [[NSBundle mainBundle] resourceURL];
 		
 	});
 	
