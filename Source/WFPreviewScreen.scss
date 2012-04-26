@@ -14,7 +14,8 @@ $FONT_MONOSPACE: "Courier", Courier, monospace;
 $FONT_SANS_SERIF_BOOK: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 $FONT_SANS_SERIF_TITLE: "Helvetica";
 $FONT_SERIF_BOOK: "Georgia", serif;
-$FONT_SANS_SERIF_BOOK_DISCRETE: "HiraKakuPro-W3", sans-serif;
+
+$FONT_SANS_SERIF_BOOK_DISCRETE: "Fontin Sans", "FontinSans", "HiraKakuPro-W3", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro W3", sans-serif;
 
 html {
 
@@ -435,12 +436,13 @@ html.discrete {
       
       &.content {
       
+      	font-family: "FontinSans", "Fontin Sans", sans-serif;
+      
 				display: -webkit-box;
 				
 				-webkit-box-flex: 1;
 				-moz-box-flex: 1;
 				box-flex: 1;
-				
 				
 				.textContainer {
 				
@@ -452,6 +454,8 @@ html.discrete {
 					display: -webkit-box;
 					-webkit-line-clamp: 0;
 					-webkit-box-orient: vertical;
+					
+					width: 100%;
 
 				}
 			
@@ -467,7 +471,6 @@ html.discrete {
 					
 			font: 16px/20px "Palatino";
 			
-			
 			.imageContainer {
 			
 				float: left;
@@ -480,14 +483,6 @@ html.discrete {
 				padding-right: 4px;
 				
 				display: table-cell;
-				
-				&:after {
-					
-					font-style: italic;
-					content: url(WFLinkIndicator.png);
-					display: inline-block;
-				
-				}
 				
 				img {
 				
@@ -517,19 +512,33 @@ html.discrete {
 		
 			h1 {
 		
-				font: 18px/24px "HoeflerText";
+				font: 18px/24px "HoeflerText", "Hoefler Text";
 				padding: 0px;
 				margin: 0px;
+				
+				overflow: hidden;
 			
 			}
 			
-			h2 {
+			h2, span.provider {
 			
-				font: 16px/20px "HelveticaNeue-CondensedBold";
+				font: 16px/20px "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold";
 			
 				display: inline;
 				padding: 0px;
 				margin: 0px;
+				
+				&:after {
+				
+					content: " • ";
+				
+				}
+				
+				&:empty:after {
+				
+					content: "";
+				
+				}
 			
 			}
 			
@@ -551,6 +560,48 @@ html.discrete {
 				margin-bottom: 0px;
 			
 			}
+		
+		}
+	
+	}
+	
+	&.no-body {
+	
+		.content {
+		
+			display: none;
+		
+		}
+		
+		.previewContainer {
+	
+			-webkit-box-flex: 1;
+			-moz-box-flex: 1;
+			box-flex: 1;
+			
+			width: 100%;
+			
+			.textContainer {
+			
+				display: block;
+				
+				p {
+				
+					display: -webkit-box;
+				
+				}
+			
+			}
+		
+		}
+	
+	}
+
+	&.no-preview {
+	
+		.previewContainer {
+		
+			display: none;
 		
 		}
 	

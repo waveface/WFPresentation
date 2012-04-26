@@ -24,18 +24,22 @@
 
 	
 	var clamp = function () {
-	
-		var content = document.querySelector("html.discrete body > div.content");
-		var textContainer = document.querySelector("html.discrete body > div.content .textContainer");
 		
-		var lineHeight = parseFloat(computedStyle(content, "lineHeight").match(/(\d+)px/)[1], 10);
-		var clientHeight = content.clientHeight;
+		((function(){
+
+			var content = document.querySelector("html.discrete body > div.content");
+			var contentTextContainer = document.querySelector("html.discrete body > div.content .textContainer");
+
+			var lineHeight = parseFloat(computedStyle(content, "lineHeight").match(/(\d+)px/)[1], 10);
+			var clientHeight = content.clientHeight;
+			
+			var desiredHeight = Math.max(lineHeight, clientHeight - (clientHeight % lineHeight));
+			
+			contentTextContainer.style.height = desiredHeight + "px";
+			contentTextContainer.style.webkitLineClamp = desiredHeight / lineHeight;
 		
-		var desiredHeight = Math.max(lineHeight, clientHeight - (clientHeight % lineHeight));
+		})());
 		
-		textContainer.style.height = desiredHeight + "px";
-		textContainer.style.webkitLineClamp = desiredHeight / lineHeight;
-	
 	}
 	
 	window.addEventListener("resize", function (event) {
