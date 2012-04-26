@@ -359,39 +359,39 @@ hr {
 
 /* line 397, WFPreviewScreen.scss */
 html.discrete {
+  background-color: #f2f2f2;
   padding: 0px 0px 0px 0px;
   font-size: 17.5px;
   width: 100%;
   height: 100%;
 }
-/* line 405, WFPreviewScreen.scss */
+/* line 407, WFPreviewScreen.scss */
 html.discrete body {
   margin: 0px 32px 20px 32px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   display: -moz-box;
   -moz-box-orient: vertical;
-  font: 1em/1.43em "Fontin Sans", "FontinSans", "HiraKakuPro-W3", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro W3", sans-serif;
+  font: 1em/1.43em "Fontin Sans Bold", "FontinSans-Bold", "HiraKakuProN-W6", "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro W6", "STHeitiTC-Medium", "STHeitiSC-Medium", sans-serif;
   max-width: 100%;
   height: 100%;
 }
-/* line 419, WFPreviewScreen.scss */
+/* line 421, WFPreviewScreen.scss */
 html.discrete body > div {
   display: block;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-/* line 421, WFPreviewScreen.scss */
+/* line 423, WFPreviewScreen.scss */
 html.discrete body > div:first-child {
   margin-top: 20px;
 }
-/* line 427, WFPreviewScreen.scss */
+/* line 429, WFPreviewScreen.scss */
 html.discrete body > div:last-child {
   margin-bottom: 20px;
 }
-/* line 437, WFPreviewScreen.scss */
+/* line 439, WFPreviewScreen.scss */
 html.discrete body > div.content {
-  font-family: "FontinSans", "Fontin Sans", sans-serif;
   display: -webkit-box;
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -409,9 +409,12 @@ html.discrete body > div.content .textContainer {
 }
 /* line 470, WFPreviewScreen.scss */
 html.discrete body .previewContainer {
+  background: url(WAPreviewStripePattern.png) repeat repeat;
+  margin-top: 16px;
+  padding: 8px;
   font: 16px/20px "Palatino";
 }
-/* line 474, WFPreviewScreen.scss */
+/* line 479, WFPreviewScreen.scss */
 html.discrete body .previewContainer .imageContainer {
   float: left;
   max-width: 64px;
@@ -420,16 +423,16 @@ html.discrete body .previewContainer .imageContainer {
   padding-right: 4px;
   display: table-cell;
 }
-/* line 487, WFPreviewScreen.scss */
+/* line 492, WFPreviewScreen.scss */
 html.discrete body .previewContainer .imageContainer img {
   vertical-align: bottom;
   max-width: 100%;
 }
-/* line 492, WFPreviewScreen.scss */
+/* line 497, WFPreviewScreen.scss */
 html.discrete body .previewContainer .imageContainer img[src=""] {
   display: none;
 }
-/* line 503, WFPreviewScreen.scss */
+/* line 508, WFPreviewScreen.scss */
 html.discrete body .previewContainer .textContainer {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -437,61 +440,65 @@ html.discrete body .previewContainer .textContainer {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-/* line 513, WFPreviewScreen.scss */
+/* line 518, WFPreviewScreen.scss */
 html.discrete body .previewContainer h1 {
-  font: 18px/24px "HoeflerText", "Hoefler Text";
+  font: 18px/24px "HoeflerText-Black", "Hoefler Text Black", "HoeflerText", "Hoefler Text", "HiraMinProN-W6", sans-serif;
   padding: 0px;
   margin: 0px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  height: 24px;
+  -webkit-line-clamp: 1;
 }
-/* line 523, WFPreviewScreen.scss */
+/* line 531, WFPreviewScreen.scss */
 html.discrete body .previewContainer h2, html.discrete body .previewContainer span.provider {
-  font: 16px/20px "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold";
+  font: 16px/20px "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "HiraKakuProN-W6";
   display: inline;
   padding: 0px;
   margin: 0px;
 }
-/* line 531, WFPreviewScreen.scss */
+/* line 539, WFPreviewScreen.scss */
 html.discrete body .previewContainer h2:after, html.discrete body .previewContainer span.provider:after {
   content: " • ";
 }
-/* line 537, WFPreviewScreen.scss */
+/* line 545, WFPreviewScreen.scss */
 html.discrete body .previewContainer h2:empty:after, html.discrete body .previewContainer span.provider:empty:after {
   content: "";
 }
-/* line 545, WFPreviewScreen.scss */
+/* line 553, WFPreviewScreen.scss */
 html.discrete body .previewContainer p {
+  font-family: "Palatino-Roman", "HiraMinProN-W3", serif;
   display: inline;
 }
-/* line 553, WFPreviewScreen.scss */
+/* line 563, WFPreviewScreen.scss */
 html.discrete body .footer {
   font: 11px/16px "HelveticaNeue-Bold";
   text-align: right;
 }
-/* line 558, WFPreviewScreen.scss */
+/* line 568, WFPreviewScreen.scss */
 html.discrete body .footer p {
   margin-bottom: 0px;
 }
-/* line 570, WFPreviewScreen.scss */
+/* line 580, WFPreviewScreen.scss */
 html.discrete.no-body .content {
   display: none;
 }
-/* line 576, WFPreviewScreen.scss */
+/* line 586, WFPreviewScreen.scss */
 html.discrete.no-body .previewContainer {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
   width: 100%;
 }
-/* line 584, WFPreviewScreen.scss */
+/* line 594, WFPreviewScreen.scss */
 html.discrete.no-body .previewContainer .textContainer {
   display: block;
 }
-/* line 588, WFPreviewScreen.scss */
+/* line 598, WFPreviewScreen.scss */
 html.discrete.no-body .previewContainer .textContainer p {
   display: -webkit-box;
 }
-/* line 602, WFPreviewScreen.scss */
+/* line 612, WFPreviewScreen.scss */
 html.discrete.no-preview .previewContainer {
   display: none;
 }

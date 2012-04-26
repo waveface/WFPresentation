@@ -15,7 +15,7 @@ $FONT_SANS_SERIF_BOOK: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 $FONT_SANS_SERIF_TITLE: "Helvetica";
 $FONT_SERIF_BOOK: "Georgia", serif;
 
-$FONT_SANS_SERIF_BOOK_DISCRETE: "Fontin Sans", "FontinSans", "HiraKakuPro-W3", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro W3", sans-serif;
+$FONT_SANS_SERIF_BOOK_DISCRETE: "Fontin Sans Bold", "FontinSans-Bold", "HiraKakuProN-W6", "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro W6", "STHeitiTC-Medium", "STHeitiSC-Medium", sans-serif;
 
 html {
 
@@ -396,6 +396,8 @@ hr {
 
 html.discrete {
 
+	background-color: brightness(242);
+
 	padding: 0px 0px 0px 0px;
 	font-size: 17.5px;
 	
@@ -436,8 +438,6 @@ html.discrete {
       
       &.content {
       
-      	font-family: "FontinSans", "Fontin Sans", sans-serif;
-      
 				display: -webkit-box;
 				
 				-webkit-box-flex: 1;
@@ -468,7 +468,12 @@ html.discrete {
 		}
 		
 		.previewContainer {
-					
+		
+			background: url(WAPreviewStripePattern.png) repeat repeat;
+			
+			margin-top: 16px;
+			padding: 8px;
+			
 			font: 16px/20px "Palatino";
 			
 			.imageContainer {
@@ -512,17 +517,20 @@ html.discrete {
 		
 			h1 {
 		
-				font: 18px/24px "HoeflerText", "Hoefler Text";
+				font: 18px/24px "HoeflerText-Black", "Hoefler Text Black", "HoeflerText", "Hoefler Text", "HiraMinProN-W6", sans-serif;
 				padding: 0px;
 				margin: 0px;
 				
 				overflow: hidden;
+				text-overflow: ellipsis;
+				height: 24px;
+				-webkit-line-clamp: 1;
 			
 			}
 			
 			h2, span.provider {
 			
-				font: 16px/20px "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold";
+				font: 16px/20px "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "HiraKakuProN-W6";
 			
 				display: inline;
 				padding: 0px;
@@ -543,6 +551,8 @@ html.discrete {
 			}
 			
 			p {
+			
+				font-family: "Palatino-Roman", "HiraMinProN-W3", serif;
 
 				display: inline;			
 			
