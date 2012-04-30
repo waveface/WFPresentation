@@ -1,8 +1,4 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,68 +20,67 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 20, WFPreviewScreen.scss */
+/* line 12, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 html {
-  background-color: #f0f0f0;
   -webkit-text-size-adjust: none;
-  padding: 3em 2em 2em 2em;
-}
-
-/* line 30, WFPreviewScreen.scss */
-html {
   font-size: 14pt;
 }
 
 @media screen and (max-width: 320px) {
-  /* line 38, WFPreviewScreen.scss */
+  /* line 21, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
   html {
     font-size: 12pt;
   }
 }
-/* line 47, WFPreviewScreen.scss */
+/* line 29, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+html {
+  background-color: #f0f0f0;
+}
+
+/* line 35, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 body {
   font: 1em/1.625em "Georgia", serif;
   font-size-adjust: none;
@@ -93,120 +88,89 @@ body {
   font-variant: normal;
   font-weight: normal;
   max-width: 100%;
-  /*
-  	text-align: justify;
-  	text-justify: trim;
-  */
 }
 
-/* line 64, WFPreviewScreen.scss */
+/* line 47, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 h1, h2, h3, h4, h5, h6 {
+  padding-top: 1em;
   font-weight: normal;
   font-family: "Helvetica", "Arial", sans-serif;
   color: #202020;
-  padding-top: 1em;
 }
 
-/* line 75, WFPreviewScreen.scss */
+/* line 58, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 h1 {
   font-size: 2.125em;
   margin-bottom: 0.765em;
 }
 
-/* line 82, WFPreviewScreen.scss */
+/* line 65, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 h2 {
   font-size: 1.9em;
   margin-bottom: 0.855em;
 }
 
-/* line 89, WFPreviewScreen.scss */
+/* line 72, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 h3 {
   font-size: 1.7em;
   margin-bottom: 0.956em;
 }
 
-/* line 96, WFPreviewScreen.scss */
+/* line 79, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 h4 {
   font-size: 1.4em;
   margin-bottom: 1.161em;
 }
 
-/* line 103, WFPreviewScreen.scss */
+/* line 86, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 h5, h6 {
   font-size: 1.313em;
   margin-bottom: 1.238em;
 }
 
-/* line 110, WFPreviewScreen.scss */
-.header {
-  padding-bottom: 2em;
-}
-/* line 112, WFPreviewScreen.scss */
-.header h1 {
-  padding: 0;
-  margin: 0;
-  font-size: 1.8em;
-  line-height: 1.35em;
-  color: #c66b4b;
-  font-weight: bold;
-  font-family: "HelveticaNeue-CondensedBold", "HelveticaNeue", "Helvetica Neue", "Arial", sans-serif;
-}
-/* line 130, WFPreviewScreen.scss */
-.header h2 {
-  padding: 0;
-  margin: 0;
-  font-size: 0.85em;
-  font-family: "HelveticaNeue-Light", "HelveticaNeue", "Helvetica Neue", sans-serif;
-  color: #929292;
-}
-/* line 143, WFPreviewScreen.scss */
-.header h2 + h1, .header h1 + h2 {
-  padding-top: 0.25em;
-}
-
-/* line 153, WFPreviewScreen.scss */
+/* line 93, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 a {
   color: #404040;
   font-weight: bold;
   text-decoration: underline;
 }
-/* line 159, WFPreviewScreen.scss */
+/* line 99, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 167, WFPreviewScreen.scss */
+/* line 107, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 173, WFPreviewScreen.scss */
+/* line 113, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 em, dfn {
   font-style: italic;
 }
 
-/* line 179, WFPreviewScreen.scss */
+/* line 119, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 dfn {
   font-weight: bold;
 }
 
-/* line 185, WFPreviewScreen.scss */
+/* line 125, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 abbr, acronym {
   border-bottom: 1px dotted #000;
 }
 
-/* line 191, WFPreviewScreen.scss */
+/* line 131, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 address {
   margin-top: 1.625em;
   font-style: italic;
 }
 
-/* line 198, WFPreviewScreen.scss */
+/* line 138, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 del {
   color: #000;
 }
 
-/* line 204, WFPreviewScreen.scss */
+/* line 144, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 caption {
   text-align: center;
   font-family: "Helvetica";
@@ -215,39 +179,39 @@ caption {
   padding-bottom: 1em;
 }
 
-/* line 215, WFPreviewScreen.scss */
+/* line 155, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 table {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.625em;
   border-collapse: collapse;
 }
-/* line 225, WFPreviewScreen.scss */
+/* line 165, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 table tr td {
   border-bottom: 1px solid #dcdcdc;
   border-spacing: 0px;
 }
-/* line 232, WFPreviewScreen.scss */
+/* line 172, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 table tr th {
   font-weight: bold;
   border-bottom: 2px solid #b4b4b4;
 }
-/* line 239, WFPreviewScreen.scss */
+/* line 179, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 table tr:last-child {
   border-bottom: 2px solid #b4b4b4;
 }
-/* line 247, WFPreviewScreen.scss */
+/* line 187, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 table tr, table th, table td {
   margin: 0;
   padding: 0 1.625em 0 1em;
   height: 2.25em;
 }
-/* line 255, WFPreviewScreen.scss */
+/* line 195, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 table tfoot {
   font-style: italic;
 }
 
-/* line 263, WFPreviewScreen.scss */
+/* line 203, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 pre, xmp, plaintext, listing {
   font-family: "Courier", Courier, monospace;
   overflow-x: auto;
@@ -255,32 +219,22 @@ pre, xmp, plaintext, listing {
   white-space: pre-wrap;
 }
 
-/* line 273, WFPreviewScreen.scss */
+/* line 213, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 p {
   margin-bottom: 0.8125em;
   color: #111;
   font-weight: 300;
 }
-/* line 279, WFPreviewScreen.scss */
+/* line 219, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 p + p {
   text-indent: 1.625em;
 }
-/* line 283, WFPreviewScreen.scss */
+/* line 223, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 p + p img {
   text-indent: -1.625em;
 }
-/* line 291, WFPreviewScreen.scss */
-p .first:first-letter {
-  float: left;
-  font-family: baskerville,"palatino linotype",serif;
-  font-size: 3em;
-  font-weight: 700;
-  line-height: 1em;
-  margin-bottom: -0.2em;
-  padding: 0.2em 0.1em 0 0;
-}
 
-/* line 299, WFPreviewScreen.scss */
+/* line 233, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 p img, a img {
   display: block;
   margin-left: auto;
@@ -298,7 +252,7 @@ p img, a img {
   margin-bottom: 3em;
 }
 
-/* line 323, WFPreviewScreen.scss */
+/* line 253, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 blockquote {
   padding: 0 1em 0 1em;
   margin: 1em 0 1.625em 0;
@@ -306,150 +260,148 @@ blockquote {
   font-style: italic;
   border-left: 4px solid silver;
 }
-/* line 333, WFPreviewScreen.scss */
+/* line 263, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 blockquote > p {
   margin: 0;
   padding: 0;
 }
 
-/* line 342, WFPreviewScreen.scss */
+/* line 272, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 pre, code, tt {
   font: 1em "Courier", Courier, monospace;
   line-height: 1.375em;
 }
 
-/* line 349, WFPreviewScreen.scss */
+/* line 279, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 pre, code {
   display: block;
   margin: 1.625em 0;
   white-space: pre-wrap;
 }
 
-/* line 357, WFPreviewScreen.scss */
+/* line 287, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 pre code {
   margin-left: 0em;
 }
 
-/* line 363, WFPreviewScreen.scss */
+/* line 293, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 tt {
   display: block;
   margin: 1.625em 0;
 }
 
-/* line 369, WFPreviewScreen.scss */
+/* line 299, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 ul, ol, dl {
   list-style-position: outside;
   margin: 0 0 1.625em 0;
 }
 
-/* line 376, WFPreviewScreen.scss */
+/* line 306, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 dl dt {
   font-weight: bold;
 }
 
-/* line 382, WFPreviewScreen.scss */
+/* line 312, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 dl dd {
   margin-left: 1.625em;
 }
 
-/* line 390, WFPreviewScreen.scss */
+/* line 318, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
 hr {
   margin-bottom: 1.625em;
 }
 
-/* line 397, WFPreviewScreen.scss */
-html.discrete {
+/* line 4, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationFullFrame.scss */
+html.wf-presentation-full-frame {
+  padding: 3em 2em 2em 2em;
+}
+/* line 8, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationFullFrame.scss */
+html.wf-presentation-full-frame .header {
+  padding-bottom: 2em;
+}
+/* line 10, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationFullFrame.scss */
+html.wf-presentation-full-frame .header h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.8em;
+  line-height: 1.35em;
+  color: #c66b4b;
+  font-weight: bold;
+  font-family: "HelveticaNeue-CondensedBold", "HelveticaNeue", "Helvetica Neue", "Arial", sans-serif;
+}
+/* line 28, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationFullFrame.scss */
+html.wf-presentation-full-frame .header h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 0.85em;
+  font-family: "HelveticaNeue-Light", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  color: #929292;
+}
+/* line 41, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationFullFrame.scss */
+html.wf-presentation-full-frame .header h2 + h1, html.wf-presentation-full-frame .header h1 + h2 {
+  padding-top: 0.25em;
+}
+
+/* line 4, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete {
   background-color: #f2f2f2;
-  padding: 0px 0px 0px 0px;
-  font-size: 17.5px;
+  padding: 0px;
   width: 100%;
   height: 100%;
+  font-size: 17.5px;
 }
-/* line 407, WFPreviewScreen.scss */
-html.discrete body {
-  margin: 4px 4px 4px 4px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  display: -moz-box;
-  -moz-box-orient: vertical;
+/* line 14, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete body {
+  margin: 0px;
   font: 1em/1.43em "Fontin Sans Bold", "FontinSans-Bold", "HiraKakuProN-W6", "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro W6", "STHeitiTC-Medium", "STHeitiSC-Medium", sans-serif;
   max-width: 100%;
   height: 100%;
 }
-/* line 421, WFPreviewScreen.scss */
-html.discrete body > div {
-  display: block;
+/* line 23, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete body > div {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-/* line 423, WFPreviewScreen.scss */
-html.discrete body > div:first-child {
+/* line 25, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete body > div:first-child, html.wf-presentation-discrete body > div + div {
   padding-top: 20px;
 }
-/* line 429, WFPreviewScreen.scss */
-html.discrete body > div:last-child {
+/* line 31, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete body > div:last-child {
   padding-bottom: 20px;
 }
-/* line 439, WFPreviewScreen.scss */
-html.discrete body > div.content {
-  display: -webkit-box;
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  box-flex: 1;
+/* line 40, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete body > div.content {
   padding-left: 20px;
   padding-right: 20px;
 }
-/* line 450, WFPreviewScreen.scss */
-html.discrete body > div.content p {
+/* line 45, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete body > div.content p {
   color: #4d4d4d;
 }
-/* line 456, WFPreviewScreen.scss */
-html.discrete body > div.content .textContainer {
+/* line 51, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete body > div.content .textContainer {
   overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: break-word;
-  display: -webkit-box;
-  -webkit-line-clamp: 0;
-  -webkit-box-orient: vertical;
   width: 100%;
 }
-/* line 479, WFPreviewScreen.scss */
-html.discrete body .previewContainer {
+/* line 70, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete body .previewContainer {
   background: url(WAPreviewStripePattern.png) repeat repeat;
-  margin-top: 16px;
-  margin-left: 12px;
-  margin-right: 12px;
-  padding: 8px;
+  margin: 8px 20px 8px 20px;
   font: 16px/20px "Palatino";
 }
-/* line 491, WFPreviewScreen.scss */
-html.discrete body .previewContainer .imageContainer {
-  float: left;
-  max-width: 64px;
-  height: 64px;
-  overflow: hidden;
+/* line 78, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete body .previewContainer .imageContainer {
   padding-right: 4px;
-  display: table-cell;
 }
-/* line 504, WFPreviewScreen.scss */
-html.discrete body .previewContainer .imageContainer img {
-  vertical-align: bottom;
-  max-width: 100%;
+/* line 84, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete body .previewContainer .textContainer {
+  padding: 8px;
 }
-/* line 509, WFPreviewScreen.scss */
-html.discrete body .previewContainer .imageContainer img[src=""] {
-  display: none;
-}
-/* line 520, WFPreviewScreen.scss */
-html.discrete body .previewContainer .textContainer {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-/* line 530, WFPreviewScreen.scss */
-html.discrete body .previewContainer h1 {
+/* line 90, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete body .previewContainer h1 {
   font: 18px/24px "HoeflerText-Black", "Hoefler Text Black", "HoeflerText", "Hoefler Text", "HiraMinProN-W6", sans-serif;
   padding: 0px;
   margin: 0px;
@@ -458,62 +410,103 @@ html.discrete body .previewContainer h1 {
   height: 24px;
   -webkit-line-clamp: 1;
 }
-/* line 543, WFPreviewScreen.scss */
-html.discrete body .previewContainer h2, html.discrete body .previewContainer span.provider {
+/* line 103, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete body .previewContainer h2, html.wf-presentation-discrete body .previewContainer span.provider {
   font: 16px/20px "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "HiraKakuProN-W6";
   display: inline;
   padding: 0px;
   margin: 0px;
 }
-/* line 551, WFPreviewScreen.scss */
-html.discrete body .previewContainer h2:after, html.discrete body .previewContainer span.provider:after {
+/* line 111, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete body .previewContainer h2:after, html.wf-presentation-discrete body .previewContainer span.provider:after {
   content: " • ";
 }
-/* line 557, WFPreviewScreen.scss */
-html.discrete body .previewContainer h2:empty:after, html.discrete body .previewContainer span.provider:empty:after {
+/* line 117, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete body .previewContainer h2:empty:after, html.wf-presentation-discrete body .previewContainer span.provider:empty:after {
   content: "";
 }
-/* line 565, WFPreviewScreen.scss */
-html.discrete body .previewContainer p {
+/* line 125, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete body .previewContainer p {
   font-family: "Palatino-Roman", "HiraMinProN-W3", serif;
-  display: inline;
 }
-/* line 575, WFPreviewScreen.scss */
-html.discrete body .footer {
+/* line 133, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete body .footer {
+  padding-top: 0px;
   font: 11px/16px "HelveticaNeue-Bold";
   text-align: right;
 }
-/* line 580, WFPreviewScreen.scss */
-html.discrete body .footer p {
-  margin-bottom: 0px;
-  margin-right: 12px;
+/* line 140, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete body .footer p {
+  margin-right: 20px;
   color: #a0a0a0;
 }
-/* line 595, WFPreviewScreen.scss */
-html.discrete.no-body .content {
-  display: none;
+/* line 152, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete p {
+  margin-bottom: 0px;
 }
-/* line 601, WFPreviewScreen.scss */
-html.discrete.no-body .previewContainer {
+
+/* line 7, WFPreviewScreen.scss */
+.box {
+  display: -webkit-box;
+}
+
+/* line 13, WFPreviewScreen.scss */
+.box-orient-vertical {
+  -webkit-box-orient: vertical;
+}
+
+/* line 19, WFPreviewScreen.scss */
+.box-orient-horizontal {
+  -webkit-box-orient: horizontal;
+}
+
+/* line 25, WFPreviewScreen.scss */
+.box-pack-center {
+  -webkit-box-pack: center;
+}
+
+/* line 32, WFPreviewScreen.scss */
+.box-flex {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
-  width: auto;
 }
-/* line 609, WFPreviewScreen.scss */
-html.discrete.no-body .previewContainer .textContainer {
-  display: block;
+
+/* line 40, WFPreviewScreen.scss */
+.box-flex-2 {
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  box-flex: 2;
 }
-/* line 613, WFPreviewScreen.scss */
-html.discrete.no-body .previewContainer .textContainer p {
+
+/* line 49, WFPreviewScreen.scss */
+.wf-content-clamp-container {
+  display: block !important;
+  overflow: hidden;
+}
+
+/* line 56, WFPreviewScreen.scss */
+.wf-content-clamp {
+  overflow: hidden;
+  text-overflow: ellipsis;
   display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
-/* line 627, WFPreviewScreen.scss */
-html.discrete.no-preview .content {
-  background: url(WAPreviewQuoteBackdrop.png) top left no-repeat;
-  background-position: 0px 12px;
+
+/* line 67, WFPreviewScreen.scss */
+.wf-centered-image-container {
+  overflow: hidden;
+  vertical-align: middle;
+  position: relative;
 }
-/* line 634, WFPreviewScreen.scss */
-html.discrete.no-preview .previewContainer {
+/* line 73, WFPreviewScreen.scss */
+.wf-centered-image-container img {
+  position: absolute;
+  display: block;
+  margin-right: 24px;
+}
+/* line 79, WFPreviewScreen.scss */
+.wf-centered-image-container img[src=""] {
   display: none;
 }
