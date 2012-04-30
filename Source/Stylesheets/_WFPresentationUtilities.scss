@@ -1,0 +1,8 @@
+@import "compass/reset";
+@import "compass/css3/box-shadow";
+
+@function brightness($n) {
+ 
+	@return rgb($n, $n, $n);
+  
+}

@@ -10,6 +10,55 @@
 
 	//	Dynamic Line Clamp
 	
+	var Size = function (w, h) {
+	
+		this.width = w;
+		this.height = h;
+		
+		this.aspectRatio = function () {
+		
+			if (!this.height)
+				return -1;
+			
+			return this.width / this.height;
+		
+		}
+		
+		this.aspectFillSizeInSize = function (otherSize) {
+		
+			var ownAspectRatio = this.aspectRatio();
+			var otherAspectRatio = otherSize.aspectRatio();
+			
+			if ((ownAspectRatio == -1) || (otherAspectRatio == -1))
+				return null;
+			
+			var sizeMatchingWidth = SizeMake(
+				otherSize.width,
+				otherSize.width / ownAspectRatio
+			);
+		
+			var sizeMatchingHeight = SizeMake(
+				otherSize.height * ownAspectRatio,
+				otherSize.height
+			);
+			
+			var answer = sizeMatchingHeight;
+			
+			if (sizeMatchingWidth.height >= otherSize.height)
+				answer = sizeMatchingWidth;
+			
+			return answer;
+			
+		}
+	
+	}
+	
+	var SizeMake = function (w, h) {
+		
+		return new Size(w, h);
+		
+	}
+	
 	var computedStyle = function (element, propertyName) {
 	
     if (element.currentStyle)
@@ -21,40 +70,96 @@
 		return "";
 	
 	}
+	
+	var parsePixels = function (aString) {
+	
+		return parseFloat(aString.match(/(\d+)px/)[1], 10);
+	
+	}
+	
+	var pixelValue = function (element, propertyName) {
+	
+		return parsePixels(computedStyle(element, propertyName));
+	
+	}
+	
+	var sizeOf = function (element) {
 
+		return SizeMake(
+			element.clientWidth - pixelValue(element, "paddingLeft") - pixelValue(element, "paddingRight"),
+			element.clientHeight - pixelValue(element, "paddingTop") - pixelValue(element, "paddingBottom")
+		);
+	
+	}
 	
 	var clamp = function () {
 		
-		((function(){
-
-			var content = document.querySelector("html.discrete body > div.content");
-			var contentTextContainer = document.querySelector("html.discrete body > div.content .textContainer");
-
-			var lineHeight = parseFloat(computedStyle(content, "lineHeight").match(/(\d+)px/)[1], 10);
-			var clientHeight = content.clientHeight;
+		var contentElements = document.querySelectorAll("html .wf-content-clamp-container");
+		for (var i = 0; i < contentElements.length; i++) {
+		
+			var content = contentElements[i];
+			var contentTextContainer = content.querySelector(".wf-content-clamp");
 			
-			var desiredHeight = Math.max(lineHeight, clientHeight - (clientHeight % lineHeight) - lineHeight);
+			if (!content || !contentTextContainer)
+				return;
+			
+			var lineHeight = pixelValue(content, "lineHeight");
+			var clientHeight = sizeOf(content).height;
+			
+			var desiredHeight = Math.max(lineHeight, clientHeight - (clientHeight % lineHeight));
 			
 			contentTextContainer.style.height = desiredHeight + "px";
 			contentTextContainer.style.webkitLineClamp = desiredHeight / lineHeight;
 		
-		})());
-		
+		}
+				
 	}
 	
-	window.addEventListener("resize", function (event) {
+	var twiddle = function () {
 	
-		clamp();
-	
-	}, false);
-	
-	document.addEventListener("DOMContentLoaded", function (event) {
-	
-		clamp();
-	
-	}, false);
+		var imageContainers = document.querySelectorAll("html .wf-centered-image-container");
+		for (var i = 0; i < imageContainers.length; i++) {
+		
+			var imageContainer = imageContainers[i];
+			var image = imageContainer.querySelector("img");
+			if (image) {
+			
+				if (!image.getAttribute("src"))
+					imageContainer.style.display = "none";
 
+				var imageSize = SizeMake(image.naturalWidth, image.naturalHeight);
+				var containerSize = sizeOf(imageContainer);
+				var toImageSize = imageSize.aspectFillSizeInSize(containerSize);
+				
+				if (!toImageSize)
+					continue;
+				
+				image.style.height = toImageSize.height + "px";				
+				image.style.top = 0.5 * (containerSize.height - toImageSize.height) + "px";
+				
+				image.style.width = toImageSize.width + "px";
+				image.style.left = 0.5 * (containerSize.width - toImageSize.width) + "px";
+				
+			}
+		
+		}
+		
+	}
+		
+	var paranoia = function () {
+	
+		clamp();
+		twiddle();
+	
+	}
+	
+	window.addEventListener("load", paranoia, false);
+	window.addEventListener("resize", paranoia, false);
+	document.addEventListener("DOMContentLoaded", paranoia, false);
+	window.onload = paranoia;
+	
+	setTimeout(paranoia, 5);
+	
 })();
-
 
 

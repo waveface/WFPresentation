@@ -1,642 +1,87 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "Stylesheets/WFPresentationUtilities";
+@import "Stylesheets/WFPresentationTypography";
 
-@import "compass/reset";
-@import "compass/css3/box-shadow";
+@import "Stylesheets/WFPresentationFullFrame";
+@import "Stylesheets/WFPresentationDiscrete";
 
-@function brightness($n) {
-  @return rgb($n, $n, $n);
-}
+.box {
 
-$FONT_MONOSPACE: "Courier", Courier, monospace;
-$FONT_SANS_SERIF_BOOK: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-$FONT_SANS_SERIF_TITLE: "Helvetica";
-$FONT_SERIF_BOOK: "Georgia", serif;
-
-$FONT_SANS_SERIF_BOOK_DISCRETE: "Fontin Sans Bold", "FontinSans-Bold", "HiraKakuProN-W6", "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro W6", "STHeitiTC-Medium", "STHeitiSC-Medium", sans-serif;
-
-html {
-
-	background-color: brightness(240);
-	-webkit-text-size-adjust: none;
-	
-	padding: 3em 2em 2em 2em;
-	
-}
-
-
-html {
-
-	font-size: 14pt;
+	display: -webkit-box;
 
 }
 
-@media screen and (max-width: 320px) {
+.box-orient-vertical {
+
+	-webkit-box-orient: vertical;
+
+}
+
+.box-orient-horizontal {
 	
-	html {
+	-webkit-box-orient: horizontal;
 	
-		font-size: 12pt;
-	
-	}
+}
+
+.box-pack-center {
+
+	-webkit-box-pack: center;
 
 }
 
 
-body {
+.box-flex {
 
-	font: 1em/1.625em $FONT_SERIF_BOOK;
-	font-size-adjust: none;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: normal;
-
-	max-width: 100%;
-	
-/*
-	text-align: justify;
-	text-justify: trim;
-*/
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	box-flex: 1;
 
 }
 
-h1, h2, h3, h4, h5, h6 {
+.box-flex-2 {
 
-	font-weight: normal;
-	
-	font-family: "Helvetica", "Arial", sans-serif;
-	color: brightness(32);
-	
-	padding-top: 1em;
+	-webkit-box-flex: 2;
+	-moz-box-flex: 2;
+	box-flex: 2;
 
 }
 
-h1 {
 
-	font-size: 2.125em;
-	margin-bottom: 0.765em;
-	
-}
+.wf-content-clamp-container {
 
-h2 {
-	
-	font-size: 1.9em;
-	margin-bottom: 0.855em;
-	
-}
-
-h3 {
-
-	font-size: 1.7em;
-	margin-bottom: 0.956em;
+	display: block !important;
+	overflow: hidden;
 
 }
 
-h4 {
+.wf-content-clamp {
 
-	font-size: 1.4em;
-	margin-bottom: 1.161em;
-
-}
-
-h5, h6 {
-
-	font-size: 1.313em;
-	margin-bottom: 1.238em;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
 
 }
 
-.header {
 
-	h1 {
+.wf-centered-image-container {
+
+	overflow: hidden;
+  vertical-align: middle;
+  position: relative;
+  
+	img {
 	
-		padding: 0;
-		margin: 0;
-		
-		font-size: 1.8em;
-		line-height: 1.35em;
-		
-		//	color: brightness(80);
-		
-		color: rgb(198, 107, 75);
-		
-		font-weight: bold;
-		
-		font-family: "HelveticaNeue-CondensedBold", "HelveticaNeue", "Helvetica Neue", "Arial", sans-serif;
-	
-	}
-	
-	h2 {
-	
-		padding: 0;
-		margin: 0;
-		
-		font-size: 0.85em;
-		
-		font-family: "HelveticaNeue-Light", "HelveticaNeue", "Helvetica Neue", sans-serif;
-		
-		color: brightness(146);
-		
-	}
-	
-	h2 + h1, h1 + h2 {
-	
-		padding-top: 0.25em;
-	
-	}
-	
-	padding-bottom: 2em;
-	
-}
-
-a {
-
-	color: brightness(64);
-	font-weight: bold;
-	text-decoration: underline;
-
-	&:hover {
-	
-		text-decoration: underline;
-	
-	}
-
-}
-
-strong {
-
-	font-weight: bold;
-
-}
-
-em, dfn {
-
-	font-style: italic;
-
-}
-
-dfn {
-
-	font-weight: bold;
-
-}
-
-abbr, acronym {
-
-	border-bottom:1px dotted #000;
-
-}
-
-address {
-
-	margin-top: 1.625em;
-	font-style: italic;
-
-}
-
-del {
-
-	color:#000;
-
-}
-
-caption {
-
-	text-align: center;
-	font-family: $FONT_SANS_SERIF_TITLE;
-	font-weight: bold;
-	color: brightness(48);
-	
-	padding-bottom: 1em;
-
-}
-
-table {
-
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 1.625em;
-	
-	border-collapse: collapse;
-
-	tr {
-	
-		td {
-	
-			border-bottom: 1px solid brightness(220);
-			border-spacing: 0px;
-		
-		}
-	
-		th {
+	  position: absolute;
+		display: block;		
+		margin-right: 24px;
 			
-			font-weight:bold;
-			border-bottom: 2px solid brightness(180);
-		
-		}
-		
-		&:last-child {
-		
-			border-bottom: 2px solid brightness(180);
-		
-		}
-		
-	}
-
-	tr, th, td {
-	
-		margin: 0;
-		padding: 0 1.625em 0 1em;
-		height: 2.25em;
-	
-	}
-	
-	tfoot {
-		
-		font-style: italic;
-		
-	}
-
-}
-
-pre, xmp, plaintext, listing {
-
-	font-family: $FONT_MONOSPACE;
-
-	overflow-x: auto;
-	display: block;
-	white-space: pre-wrap;
-
-}
-
-p {
-
-	margin-bottom: 0.8125em;
-	color: #111;
-	font-weight: 300;
-	
-	+ p {
-	
-		text-indent: 1.625em;
-		
-		img {
-		
-			text-indent: -1.625em;
-		
-		}
-	
-	}
-	
-	.first:first-letter {
-	
-		float:left;font-family: baskerville,"palatino linotype",serif;font-size:3em;font-weight:700;line-height:1em;margin-bottom:-0.2em;padding:0.2em 0.1em 0 0;
-	
-	}
-	
-}
-
-p img, a img {
-	
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	
-	border: 4px solid white;
-	@include box-shadow(rgba(0, 0, 0, .125) 0px 1px 2px);
-	
-	background-color: white;
-	
-//	-webkit-filter: drop-shadow(rgba(0, 0, 0, .125) 0px 1px 2px);
-//	-webkit-box-shadow: none !important;
-//	-webkit-appearance: listitem !important;
-	
-	max-width: 100% !important;
-	width: auto !important;
-	height: auto !important;
-	
-	margin-top: 3em;
-	margin-bottom: 3em;
-	
-}
-
-blockquote {
-
-	padding: 0 1em 0 1em;
-	margin: 1em 0 1.625em 0;
-	
-	font-family: georgia, serif;
-	font-style: italic;
-	
-	border-left: 4px solid brightness(192);
-	
-	> p {
-	
-		margin: 0;
-		padding: 0;
-	
-	}
-	
-}
-
-pre, code, tt {
-
-	font: 1em $FONT_MONOSPACE;
-	line-height: 1.375em;
-
-} 
-
-pre, code {
-
-	display: block;
-	margin: 1.625em 0;
-	white-space: pre-wrap;
-	
-}
-
-pre code {
-	
-	margin-left: 0em;
-	
-}
-
-tt {
-
-	display: block; margin: 1.625em 0;
-
-}
-
-ul, ol, dl {
-
-	list-style-position: outside;
-	margin: 0 0 1.625em 0;
-
-}
-
-dl dt {
-
-	font-weight: bold;
-
-}
-
-dl dd {
-
-	margin-left: 1.625em;
-
-}
-
-
-
-hr {
-
-	margin-bottom: 1.625em;
-
-}
-
-
-html.discrete {
-
-	background-color: brightness(242);
-
-	padding: 0px 0px 0px 0px;
-	font-size: 17.5px;
-	
-	width: 100%;
-	height: 100%;
-	
-	body {
-	
-		margin: 4px 4px 4px 4px;
-		
-		display: -webkit-box;
-		-webkit-box-orient: vertical;
-		display: -moz-box;
-		-moz-box-orient: vertical;
-	
-		font: 1em/1.43em $FONT_SANS_SERIF_BOOK_DISCRETE;
-		
-		max-width: 100%;
-		height: 100%;
-		
-		> div {
-			
-			&:first-child {
-			
-				padding-top: 20px;
-			
-			}
-		
-			&:last-child {
-			
-				padding-bottom: 20px;
-			
-			}
-			
-			display: block;
-			text-overflow: ellipsis;
-      overflow: hidden;
-      
-      &.content {
-      
-				display: -webkit-box;
-				
-				-webkit-box-flex: 1;
-				-moz-box-flex: 1;
-				box-flex: 1;
-				
-				padding-left: 20px;
-				padding-right: 20px;
-				
-				p {
-				
-					color: rgb(77, 77, 77);
-				
-				}
-				
-				.textContainer {
-				
-					overflow: hidden;
-					text-overflow: ellipsis;
-				
-					word-wrap: break-word;
-					
-					display: -webkit-box;
-					-webkit-line-clamp: 0;
-					-webkit-box-orient: vertical;
-					
-					width: 100%;
-
-				}
-			
-			}
-			
-			&.footer {
-			
-			}
-		
-		}
-		
-		.previewContainer {
-		
-			background: url(WAPreviewStripePattern.png) repeat repeat;
-			
-			margin-top: 16px;
-			margin-left: 12px;
-			margin-right: 12px;
-			
-			padding: 8px;
-			
-			font: 16px/20px "Palatino";
-			
-			.imageContainer {
-			
-				float: left;
-
-				max-width: 64px;
-				height: 64px;
-				
-				overflow: hidden;
-				
-				padding-right: 4px;
-				
-				display: table-cell;
-				
-				img {
-				
-					vertical-align: bottom;
-					max-width: 100%;
-					
-					&[src=""] {
-					
-						display: none;
-						
-					}
-
-				}
-				
-			
-			}
-			
-			.textContainer {
-			
-				overflow : hidden;
-				text-overflow: ellipsis;
-				display: -webkit-box;
-				-webkit-line-clamp: 2;
-				-webkit-box-orient: vertical;
-			
-			}
-		
-			h1 {
-		
-				font: 18px/24px "HoeflerText-Black", "Hoefler Text Black", "HoeflerText", "Hoefler Text", "HiraMinProN-W6", sans-serif;
-				padding: 0px;
-				margin: 0px;
-				
-				overflow: hidden;
-				text-overflow: ellipsis;
-				height: 24px;
-				-webkit-line-clamp: 1;
-			
-			}
-			
-			h2, span.provider {
-			
-				font: 16px/20px "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "HiraKakuProN-W6";
-			
-				display: inline;
-				padding: 0px;
-				margin: 0px;
-				
-				&:after {
-				
-					content: " • ";
-				
-				}
-				
-				&:empty:after {
-				
-					content: "";
-				
-				}
-			
-			}
-			
-			p {
-			
-				font-family: "Palatino-Roman", "HiraMinProN-W3", serif;
-
-				display: inline;			
-			
-			}
-		
-		}
-		
-		.footer {
-		
-			font: 11px/16px "HelveticaNeue-Bold";
-			text-align: right;
-			
-			p {
-			
-				margin-bottom: 0px;
-				margin-right: 12px;
-				
-				color: rgb(160, 160, 160);
-			
-			}
-		
-		}
-	
-	}
-	
-	&.no-body {
-	
-		.content {
+		&[src=""] {
 		
 			display: none;
-		
+			
 		}
-		
-		.previewContainer {
-	
-			-webkit-box-flex: 1;
-			-moz-box-flex: 1;
-			box-flex: 1;
-			
-			width: auto;
-			
-			.textContainer {
-			
-				display: block;
-				
-				p {
-				
-					display: -webkit-box;
-				
-				}
-			
-			}
-		
-		}
-	
-	}
 
-	&.no-preview {
-	
-		.content {
-		
-			background: url(WAPreviewQuoteBackdrop.png) top left no-repeat;
-			background-position: 0px 12px;
-		
-		}
-	
-		.previewContainer {
-		
-			display: none;
-		
-		}
-	
 	}
-
+	
 }

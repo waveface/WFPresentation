@@ -1,13 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 
-<html class="wf-presentation-full-frame">
+<html class="wf-presentation-discrete $ADDITIONAL_HTML_CLASSES">
 	
 	<head>
 	
 		<meta name="generator" content="Waveface Synergised">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=100%, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
-		<title>$TITLE</title>
+		<title>Single Text Post in 8-cell layout</title>
 		
 		<link href="WFPreviewScreen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 		<link href="WFPreviewPrint.css" media="print" rel="stylesheet" type="text/css" />
@@ -19,20 +19,20 @@
 		<script type="text/javascript" src="WFPreview.js"></script>
 		<!-- <script type="text/javascript" src="WFPreviewDebug.js"></script> -->
 		
-		<style type="text/css">
-$ADDITIONAL_STYLES
-		</style>
-		
 	</head>
 	
-	<body>
+	<body class="box box-orient-vertical">
 	
-	<div class="header">
-		<h1>$TITLE</h1>
-		<h2>$SOURCE</h2>
-	</div>
-	
-$BODY
+		<div class="content box-flex wf-content-clamp-container">	
+		
+			<p class="textContainer wf-content-clamp">$BODY</p>
+		
+		</div>
+		
+		<div class="footer">
+			<p>$FOOTER</p>
+		</dov>
+
 	</body>
 	
 </html>
