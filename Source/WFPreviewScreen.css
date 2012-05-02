@@ -1,4 +1,4 @@
-/* line 17, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,67 +20,67 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 12, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 12, Stylesheets/_WFPresentationTypography.scss */
 html {
   -webkit-text-size-adjust: none;
   font-size: 14pt;
 }
 
 @media screen and (max-width: 320px) {
-  /* line 21, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+  /* line 21, Stylesheets/_WFPresentationTypography.scss */
   html {
     font-size: 12pt;
   }
 }
-/* line 29, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 29, Stylesheets/_WFPresentationTypography.scss */
 html {
   background-color: #f0f0f0;
 }
 
-/* line 35, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 35, Stylesheets/_WFPresentationTypography.scss */
 body {
   font: 1em/1.625em "Georgia", serif;
   font-size-adjust: none;
@@ -90,7 +90,7 @@ body {
   max-width: 100%;
 }
 
-/* line 47, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 47, Stylesheets/_WFPresentationTypography.scss */
 h1, h2, h3, h4, h5, h6 {
   padding-top: 1em;
   font-weight: normal;
@@ -98,79 +98,79 @@ h1, h2, h3, h4, h5, h6 {
   color: #202020;
 }
 
-/* line 58, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 58, Stylesheets/_WFPresentationTypography.scss */
 h1 {
   font-size: 2.125em;
   margin-bottom: 0.765em;
 }
 
-/* line 65, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 65, Stylesheets/_WFPresentationTypography.scss */
 h2 {
   font-size: 1.9em;
   margin-bottom: 0.855em;
 }
 
-/* line 72, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 72, Stylesheets/_WFPresentationTypography.scss */
 h3 {
   font-size: 1.7em;
   margin-bottom: 0.956em;
 }
 
-/* line 79, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 79, Stylesheets/_WFPresentationTypography.scss */
 h4 {
   font-size: 1.4em;
   margin-bottom: 1.161em;
 }
 
-/* line 86, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 86, Stylesheets/_WFPresentationTypography.scss */
 h5, h6 {
   font-size: 1.313em;
   margin-bottom: 1.238em;
 }
 
-/* line 93, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 93, Stylesheets/_WFPresentationTypography.scss */
 a {
   color: #404040;
   font-weight: bold;
   text-decoration: underline;
 }
-/* line 99, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 99, Stylesheets/_WFPresentationTypography.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 107, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 107, Stylesheets/_WFPresentationTypography.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 113, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 113, Stylesheets/_WFPresentationTypography.scss */
 em, dfn {
   font-style: italic;
 }
 
-/* line 119, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 119, Stylesheets/_WFPresentationTypography.scss */
 dfn {
   font-weight: bold;
 }
 
-/* line 125, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 125, Stylesheets/_WFPresentationTypography.scss */
 abbr, acronym {
   border-bottom: 1px dotted #000;
 }
 
-/* line 131, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 131, Stylesheets/_WFPresentationTypography.scss */
 address {
   margin-top: 1.625em;
   font-style: italic;
 }
 
-/* line 138, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 138, Stylesheets/_WFPresentationTypography.scss */
 del {
   color: #000;
 }
 
-/* line 144, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 144, Stylesheets/_WFPresentationTypography.scss */
 caption {
   text-align: center;
   font-family: "Helvetica";
@@ -179,39 +179,39 @@ caption {
   padding-bottom: 1em;
 }
 
-/* line 155, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 155, Stylesheets/_WFPresentationTypography.scss */
 table {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.625em;
   border-collapse: collapse;
 }
-/* line 165, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 165, Stylesheets/_WFPresentationTypography.scss */
 table tr td {
   border-bottom: 1px solid #dcdcdc;
   border-spacing: 0px;
 }
-/* line 172, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 172, Stylesheets/_WFPresentationTypography.scss */
 table tr th {
   font-weight: bold;
   border-bottom: 2px solid #b4b4b4;
 }
-/* line 179, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 179, Stylesheets/_WFPresentationTypography.scss */
 table tr:last-child {
   border-bottom: 2px solid #b4b4b4;
 }
-/* line 187, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 187, Stylesheets/_WFPresentationTypography.scss */
 table tr, table th, table td {
   margin: 0;
   padding: 0 1.625em 0 1em;
   height: 2.25em;
 }
-/* line 195, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 195, Stylesheets/_WFPresentationTypography.scss */
 table tfoot {
   font-style: italic;
 }
 
-/* line 203, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 203, Stylesheets/_WFPresentationTypography.scss */
 pre, xmp, plaintext, listing {
   font-family: "Courier", Courier, monospace;
   overflow-x: auto;
@@ -219,22 +219,22 @@ pre, xmp, plaintext, listing {
   white-space: pre-wrap;
 }
 
-/* line 213, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 213, Stylesheets/_WFPresentationTypography.scss */
 p {
   margin-bottom: 0.8125em;
   color: #111;
   font-weight: 300;
 }
-/* line 219, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 219, Stylesheets/_WFPresentationTypography.scss */
 p + p {
   text-indent: 1.625em;
 }
-/* line 223, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 223, Stylesheets/_WFPresentationTypography.scss */
 p + p img {
   text-indent: -1.625em;
 }
 
-/* line 233, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 233, Stylesheets/_WFPresentationTypography.scss */
 p img, a img {
   display: block;
   margin-left: auto;
@@ -252,7 +252,7 @@ p img, a img {
   margin-bottom: 3em;
 }
 
-/* line 253, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 253, Stylesheets/_WFPresentationTypography.scss */
 blockquote {
   padding: 0 1em 0 1em;
   margin: 1em 0 1.625em 0;
@@ -260,66 +260,66 @@ blockquote {
   font-style: italic;
   border-left: 4px solid silver;
 }
-/* line 263, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 263, Stylesheets/_WFPresentationTypography.scss */
 blockquote > p {
   margin: 0;
   padding: 0;
 }
 
-/* line 272, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 272, Stylesheets/_WFPresentationTypography.scss */
 pre, code, tt {
   font: 1em "Courier", Courier, monospace;
   line-height: 1.375em;
 }
 
-/* line 279, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 279, Stylesheets/_WFPresentationTypography.scss */
 pre, code {
   display: block;
   margin: 1.625em 0;
   white-space: pre-wrap;
 }
 
-/* line 287, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 287, Stylesheets/_WFPresentationTypography.scss */
 pre code {
   margin-left: 0em;
 }
 
-/* line 293, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 293, Stylesheets/_WFPresentationTypography.scss */
 tt {
   display: block;
   margin: 1.625em 0;
 }
 
-/* line 299, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 299, Stylesheets/_WFPresentationTypography.scss */
 ul, ol, dl {
   list-style-position: outside;
   margin: 0 0 1.625em 0;
 }
 
-/* line 306, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 306, Stylesheets/_WFPresentationTypography.scss */
 dl dt {
   font-weight: bold;
 }
 
-/* line 312, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 312, Stylesheets/_WFPresentationTypography.scss */
 dl dd {
   margin-left: 1.625em;
 }
 
-/* line 318, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationTypography.scss */
+/* line 318, Stylesheets/_WFPresentationTypography.scss */
 hr {
   margin-bottom: 1.625em;
 }
 
-/* line 4, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationFullFrame.scss */
+/* line 4, Stylesheets/_WFPresentationFullFrame.scss */
 html.wf-presentation-full-frame {
   padding: 3em 2em 2em 2em;
 }
-/* line 8, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationFullFrame.scss */
+/* line 8, Stylesheets/_WFPresentationFullFrame.scss */
 html.wf-presentation-full-frame .header {
   padding-bottom: 2em;
 }
-/* line 10, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationFullFrame.scss */
+/* line 10, Stylesheets/_WFPresentationFullFrame.scss */
 html.wf-presentation-full-frame .header h1 {
   padding: 0;
   margin: 0;
@@ -329,7 +329,7 @@ html.wf-presentation-full-frame .header h1 {
   font-weight: bold;
   font-family: "HelveticaNeue-CondensedBold", "HelveticaNeue", "Helvetica Neue", "Arial", sans-serif;
 }
-/* line 28, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationFullFrame.scss */
+/* line 28, Stylesheets/_WFPresentationFullFrame.scss */
 html.wf-presentation-full-frame .header h2 {
   padding: 0;
   margin: 0;
@@ -337,12 +337,12 @@ html.wf-presentation-full-frame .header h2 {
   font-family: "HelveticaNeue-Light", "HelveticaNeue", "Helvetica Neue", sans-serif;
   color: #929292;
 }
-/* line 41, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationFullFrame.scss */
+/* line 41, Stylesheets/_WFPresentationFullFrame.scss */
 html.wf-presentation-full-frame .header h2 + h1, html.wf-presentation-full-frame .header h1 + h2 {
   padding-top: 0.25em;
 }
 
-/* line 4, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 4, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete {
   background-color: #f2f2f2;
   padding: 0px;
@@ -350,57 +350,57 @@ html.wf-presentation-discrete {
   height: 100%;
   font-size: 17.5px;
 }
-/* line 14, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 14, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body {
   margin: 0px;
   font: 1em/1.43em "Fontin Sans Bold", "FontinSans-Bold", "HiraKakuProN-W6", "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro W6", "STHeitiTC-Medium", "STHeitiSC-Medium", sans-serif;
   max-width: 100%;
   height: 100%;
 }
-/* line 23, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 23, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body > div {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-/* line 25, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 25, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body > div:first-child, html.wf-presentation-discrete body > div + div {
   padding-top: 20px;
 }
-/* line 31, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 31, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body > div:last-child {
   padding-bottom: 20px;
 }
-/* line 40, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 40, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body > div.content {
   padding-left: 20px;
   padding-right: 20px;
 }
-/* line 45, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 45, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body > div.content p {
   color: #4d4d4d;
 }
-/* line 51, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 51, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body > div.content .textContainer {
   overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: break-word;
-  width: 100%;
+  width: auto;
 }
-/* line 70, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 70, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer {
   background: url(WAPreviewStripePattern.png) repeat repeat;
   margin: 8px 20px 8px 20px;
   font: 16px/20px "Palatino";
 }
-/* line 78, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 78, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer .imageContainer {
   padding-right: 4px;
 }
-/* line 84, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 84, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer .textContainer {
   padding: 8px;
 }
-/* line 90, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 90, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer h1 {
   font: 18px/24px "HoeflerText-Black", "Hoefler Text Black", "HoeflerText", "Hoefler Text", "HiraMinProN-W6", sans-serif;
   padding: 0px;
@@ -410,37 +410,37 @@ html.wf-presentation-discrete body .previewContainer h1 {
   height: 24px;
   -webkit-line-clamp: 1;
 }
-/* line 103, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 103, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer h2, html.wf-presentation-discrete body .previewContainer span.provider {
   font: 16px/20px "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "HiraKakuProN-W6";
   display: inline;
   padding: 0px;
   margin: 0px;
 }
-/* line 111, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 111, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer h2:after, html.wf-presentation-discrete body .previewContainer span.provider:after {
   content: " • ";
 }
-/* line 117, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 117, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer h2:empty:after, html.wf-presentation-discrete body .previewContainer span.provider:empty:after {
   content: "";
 }
-/* line 125, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 125, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer p {
   font-family: "Palatino-Roman", "HiraMinProN-W3", serif;
 }
-/* line 133, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 133, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .footer {
   padding-top: 0px;
   font: 11px/16px "HelveticaNeue-Bold";
   text-align: right;
 }
-/* line 140, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 140, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .footer p {
   margin-right: 20px;
   color: #a0a0a0;
 }
-/* line 152, /Users/evadne/Works/Code/waveface-wammer/external/WFPresentation/Source/Stylesheets/_WFPresentationDiscrete.scss */
+/* line 152, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete p {
   margin-bottom: 0px;
 }
