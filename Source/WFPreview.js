@@ -108,6 +108,8 @@
 			
 			var desiredHeight = Math.max(lineHeight, clientHeight - (clientHeight % lineHeight));
 			
+			console.log(content, contentTextContainer, lineHeight, clientHeight, desiredHeight);
+			
 			contentTextContainer.style.height = desiredHeight + "px";
 			contentTextContainer.style.webkitLineClamp = desiredHeight / lineHeight;
 		

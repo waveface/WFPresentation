@@ -392,10 +392,6 @@ html.wf-presentation-discrete body .previewContainer {
   margin: 8px 20px 8px 20px;
   font: 16px/20px "Palatino";
 }
-/* line 78, Stylesheets/_WFPresentationDiscrete.scss */
-html.wf-presentation-discrete body .previewContainer .imageContainer {
-  padding-right: 4px;
-}
 /* line 84, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer .textContainer {
   padding: 8px;
@@ -479,13 +475,20 @@ html.wf-presentation-discrete p {
   box-flex: 2;
 }
 
-/* line 49, WFPreviewScreen.scss */
+/* line 48, WFPreviewScreen.scss */
+.box-flex-group-1 {
+  -webkit-box-flex-group: 1;
+  -moz-box-flex-group: 1;
+  box-flex-group: 1;
+}
+
+/* line 57, WFPreviewScreen.scss */
 .wf-content-clamp-container {
   display: block !important;
   overflow: hidden;
 }
 
-/* line 56, WFPreviewScreen.scss */
+/* line 64, WFPreviewScreen.scss */
 .wf-content-clamp {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -494,19 +497,19 @@ html.wf-presentation-discrete p {
   -webkit-box-orient: vertical;
 }
 
-/* line 67, WFPreviewScreen.scss */
+/* line 75, WFPreviewScreen.scss */
 .wf-centered-image-container {
   overflow: hidden;
   vertical-align: middle;
   position: relative;
 }
-/* line 73, WFPreviewScreen.scss */
+/* line 81, WFPreviewScreen.scss */
 .wf-centered-image-container img {
   position: absolute;
   display: block;
   margin-right: 24px;
 }
-/* line 79, WFPreviewScreen.scss */
+/* line 87, WFPreviewScreen.scss */
 .wf-centered-image-container img[src=""] {
   display: none;
 }

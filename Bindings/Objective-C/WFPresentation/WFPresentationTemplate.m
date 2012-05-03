@@ -99,7 +99,6 @@
 
 	dispatch_sync([[self class] dispatchQueue], ^{
 
-		NSLog(@"reading from %@", wSelf.fileURL);
 		contents = [NSString stringWithContentsOfURL:wSelf.fileURL usedEncoding:NULL error:&error];
 		
 	});
