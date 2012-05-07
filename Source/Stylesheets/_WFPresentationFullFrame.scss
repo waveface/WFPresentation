@@ -1,0 +1,51 @@
+//	WFPresentationFullFrame
+//	Styles specifically created for full-frame previews
+
+html.wf-presentation-full-frame {
+
+	padding: 3em 2em 2em 2em;
+
+	.header {
+	
+		h1 {
+		
+			padding: 0;
+			margin: 0;
+			
+			font-size: 1.8em;
+			line-height: 1.35em;
+			
+			//	color: brightness(80);
+			
+			color: rgb(198, 107, 75);
+			
+			font-weight: bold;
+			
+			font-family: "HelveticaNeue-CondensedBold", "HelveticaNeue", "Helvetica Neue", "Arial", sans-serif;
+		
+		}
+		
+		h2 {
+		
+			padding: 0;
+			margin: 0;
+			
+			font-size: 0.85em;
+			
+			font-family: "HelveticaNeue-Light", "HelveticaNeue", "Helvetica Neue", sans-serif;
+			
+			color: brightness(146);
+			
+		}
+		
+		h2 + h1, h1 + h2 {
+		
+			padding-top: 0.25em;
+		
+		}
+		
+		padding-bottom: 2em;
+		
+	}
+
+}

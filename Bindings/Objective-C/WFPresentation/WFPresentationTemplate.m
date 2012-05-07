@@ -45,7 +45,7 @@
 	static NSURL *url = nil;
 	dispatch_once(&onceToken, ^{
 	
-		url = [[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:NSStringFromClass([self class])];
+		url = [[NSBundle mainBundle] resourceURL];
 		
 	});
 	
@@ -99,7 +99,6 @@
 
 	dispatch_sync([[self class] dispatchQueue], ^{
 
-		NSLog(@"reading from %@", wSelf.fileURL);
 		contents = [NSString stringWithContentsOfURL:wSelf.fileURL usedEncoding:NULL error:&error];
 		
 	});

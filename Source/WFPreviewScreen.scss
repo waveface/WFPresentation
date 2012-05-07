@@ -1,402 +1,95 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "Stylesheets/WFPresentationUtilities";
+@import "Stylesheets/WFPresentationTypography";
 
-@import "compass/reset";
-@import "compass/css3/box-shadow";
+@import "Stylesheets/WFPresentationFullFrame";
+@import "Stylesheets/WFPresentationDiscrete";
 
-@function brightness($n) {
-  @return rgb($n, $n, $n);
-}
+.box {
 
-$FONT_MONOSPACE: "Courier", Courier, monospace;
-$FONT_SANS_SERIF_BOOK: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-$FONT_SANS_SERIF_TITLE: "Helvetica";
-$FONT_SERIF_BOOK: "Georgia", serif;
-
-html {
-
-	background-color: brightness(240);
-	-webkit-text-size-adjust: none;
-	
-	padding: 3em 2em 2em 2em;
+	display: -webkit-box;
 
 }
 
+.box-orient-vertical {
 
-html {
-
-	font-size: 14pt;
+	-webkit-box-orient: vertical;
 
 }
 
-@media screen and (max-width: 320px) {
+.box-orient-horizontal {
 	
-	html {
+	-webkit-box-orient: horizontal;
 	
-		font-size: 12pt;
-	
-	}
+}
+
+.box-pack-center {
+
+	-webkit-box-pack: center;
 
 }
 
 
+.box-flex {
 
-
-
-
-body {
-
-	font: 1em/1.625em $FONT_SERIF_BOOK;
-	font-size-adjust: none;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: normal;
-
-	max-width: 100%;
-	
-/*
-	text-align: justify;
-	text-justify: trim;
-*/
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	box-flex: 1;
 
 }
 
-h1, h2, h3, h4, h5, h6 {
+.box-flex-2 {
 
-	font-weight: normal;
-	
-	font-family: "Helvetica", "Arial", sans-serif;
-	color: brightness(32);
-	
-	padding-top: 1em;
+	-webkit-box-flex: 2;
+	-moz-box-flex: 2;
+	box-flex: 2;
 
 }
 
-h1 {
+.box-flex-group-1 {
 
-	font-size: 2.125em;
-	margin-bottom: 0.765em;
-	
-}
-
-h2 {
-	
-	font-size: 1.9em;
-	margin-bottom: 0.855em;
-	
-}
-
-h3 {
-
-	font-size: 1.7em;
-	margin-bottom: 0.956em;
+	-webkit-box-flex-group: 1;
+	-moz-box-flex-group: 1;
+	box-flex-group: 1;
 
 }
 
-h4 {
 
-	font-size: 1.4em;
-	margin-bottom: 1.161em;
+.wf-content-clamp-container {
 
-}
-
-h5, h6 {
-
-	font-size: 1.313em;
-	margin-bottom: 1.238em;
+	display: block !important;
+	overflow: hidden;
 
 }
 
-.header {
+.wf-content-clamp {
 
-	h1 {
-	
-		padding: 0;
-		margin: 0;
-		
-		font-size: 1.8em;
-		line-height: 1.35em;
-		
-		//	color: brightness(80);
-		
-		color: rgb(198, 107, 75);
-		
-		font-weight: bold;
-		
-		font-family: "HelveticaNeue-CondensedBold", "HelveticaNeue", "Helvetica Neue", "Arial", sans-serif;
-	
-	}
-	
-	h2 {
-	
-		padding: 0;
-		margin: 0;
-		
-		font-size: 0.85em;
-		
-		font-family: "HelveticaNeue-Light", "HelveticaNeue", "Helvetica Neue", sans-serif;
-		
-		color: brightness(146);
-		
-	}
-	
-	h2 + h1, h1 + h2 {
-	
-		padding-top: 0.25em;
-	
-	}
-	
-	padding-bottom: 2em;
-	
-}
-
-a {
-
-	color: brightness(64);
-	font-weight: bold;
-	text-decoration: underline;
-
-	&:hover {
-	
-		text-decoration: underline;
-	
-	}
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
 
 }
 
-strong {
 
-	font-weight: bold;
+.wf-centered-image-container {
 
-}
-
-em, dfn {
-
-	font-style: italic;
-
-}
-
-dfn {
-
-	font-weight: bold;
-
-}
-
-abbr, acronym {
-
-	border-bottom:1px dotted #000;
-
-}
-
-address {
-
-	margin-top: 1.625em;
-	font-style: italic;
-
-}
-
-del {
-
-	color:#000;
-
-}
-
-caption {
-
-	text-align: center;
-	font-family: $FONT_SANS_SERIF_TITLE;
-	font-weight: bold;
-	color: brightness(48);
+	overflow: hidden;
+  vertical-align: middle;
+  position: relative;
+  
+	img {
 	
-	padding-bottom: 1em;
-
-}
-
-table {
-
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 1.625em;
-	
-	border-collapse: collapse;
-
-	tr {
-	
-		td {
-	
-			border-bottom: 1px solid brightness(220);
-			border-spacing: 0px;
-		
-		}
-	
-		th {
+	  position: absolute;
+		display: block;		
+		margin-right: 24px;
 			
-			font-weight:bold;
-			border-bottom: 2px solid brightness(180);
+		&[src=""] {
 		
+			display: none;
+			
 		}
-		
-		&:last-child {
-		
-			border-bottom: 2px solid brightness(180);
-		
-		}
-		
-	}
 
-	tr, th, td {
-	
-		margin: 0;
-		padding: 0 1.625em 0 1em;
-		height: 2.25em;
-	
-	}
-	
-	tfoot {
-		
-		font-style: italic;
-		
-	}
-
-}
-
-pre, xmp, plaintext, listing {
-
-	font-family: $FONT_MONOSPACE;
-
-	overflow-x: auto;
-	display: block;
-	white-space: pre-wrap;
-
-}
-
-p {
-
-	margin-bottom: 0.8125em;
-	color: #111;
-	font-weight: 300;
-	
-	+ p {
-	
-		text-indent: 1.625em;
-		
-		img {
-		
-			text-indent: -1.625em;
-		
-		}
-	
-	}
-	
-	.first:first-letter {
-	
-		float:left;font-family: baskerville,"palatino linotype",serif;font-size:3em;font-weight:700;line-height:1em;margin-bottom:-0.2em;padding:0.2em 0.1em 0 0;
-	
 	}
 	
 }
-
-p img, a img {
-	
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	
-	border: 4px solid white;
-	@include box-shadow(rgba(0, 0, 0, .125) 0px 1px 2px);
-	
-	background-color: white;
-	
-//	-webkit-filter: drop-shadow(rgba(0, 0, 0, .125) 0px 1px 2px);
-//	-webkit-box-shadow: none !important;
-//	-webkit-appearance: listitem !important;
-	
-	max-width: 100% !important;
-	width: auto !important;
-	height: auto !important;
-	
-	margin-top: 3em;
-	margin-bottom: 3em;
-	
-}
-
-blockquote {
-
-	padding: 0 1em 0 1em;
-	margin: 1em 0 1.625em 0;
-	
-	font-family: georgia, serif;
-	font-style: italic;
-	
-	border-left: 4px solid brightness(192);
-	
-	> p {
-	
-		margin: 0;
-		padding: 0;
-	
-	}
-	
-}
-
-pre, code, tt {
-
-	font: 1em $FONT_MONOSPACE;
-	line-height: 1.375em;
-
-} 
-
-pre, code {
-
-	display: block;
-	margin: 1.625em 0;
-	white-space: pre-wrap;
-	
-}
-
-pre code {
-	
-	margin-left: 0em;
-	
-}
-
-tt {
-
-	display: block; margin: 1.625em 0;
-
-}
-
-ul, ol, dl {
-
-	list-style-position: outside;
-	margin: 0 0 1.625em 0;
-
-}
-
-dl dt {
-
-	font-weight: bold;
-
-}
-
-dl dd {
-
-	margin-left: 1.625em;
-
-}
-
-
-
-hr {
-
-	margin-bottom: 1.625em;
-
-}
-
-
-
-.oldbook { font-family:"Warnock Pro","Goudy Old Style","Book Antiqua","Palatino",Georgia,serif; }
-.note { font-family:Georgia, "Times New Roman", Times, serif; font-style:italic; font-size:0.9em; margin:0.1em; color:#333; } 
-.mono { font-family: $FONT_MONOSPACE; }

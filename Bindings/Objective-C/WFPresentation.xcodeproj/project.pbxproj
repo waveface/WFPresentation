@@ -10,7 +10,6 @@
 		FF7120FB1545501F00F64AB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7120FA1545501F00F64AB7 /* Foundation.framework */; };
 		FF7121011545501F00F64AB7 /* WFPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7121001545501F00F64AB7 /* WFPresentation.m */; };
 		FF7121091545502000F64AB7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7121081545502000F64AB7 /* SenTestingKit.framework */; };
-		FF71210B1545502000F64AB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF71210A1545502000F64AB7 /* UIKit.framework */; };
 		FF71210C1545502000F64AB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7120FA1545501F00F64AB7 /* Foundation.framework */; };
 		FF71210F1545502000F64AB7 /* libWFPresentation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7120F71545501F00F64AB7 /* libWFPresentation.a */; };
 		FF7121151545502000F64AB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF7121131545502000F64AB7 /* InfoPlist.strings */; };
@@ -41,7 +40,6 @@
 		FF7121001545501F00F64AB7 /* WFPresentation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFPresentation.m; sourceTree = "<group>"; };
 		FF7121071545502000F64AB7 /* WFPresentationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WFPresentationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7121081545502000F64AB7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		FF71210A1545502000F64AB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		FF7121121545502000F64AB7 /* WFPresentationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WFPresentationTests-Info.plist"; sourceTree = "<group>"; };
 		FF7121141545502000F64AB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FF7121161545502000F64AB7 /* WFPresentationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFPresentationTests.h; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF7121091545502000F64AB7 /* SenTestingKit.framework in Frameworks */,
-				FF71210B1545502000F64AB7 /* UIKit.framework in Frameworks */,
 				FF71210C1545502000F64AB7 /* Foundation.framework in Frameworks */,
 				FF71210F1545502000F64AB7 /* libWFPresentation.a in Frameworks */,
 			);
@@ -100,7 +97,6 @@
 			children = (
 				FF7120FA1545501F00F64AB7 /* Foundation.framework */,
 				FF7121081545502000F64AB7 /* SenTestingKit.framework */,
-				FF71210A1545502000F64AB7 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -344,7 +340,10 @@
 				DSTROOT = /tmp/WFPresentation.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WFPresentation/WFPresentation-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -356,7 +355,10 @@
 				DSTROOT = /tmp/WFPresentation.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WFPresentation/WFPresentation-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
