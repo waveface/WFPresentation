@@ -90,7 +90,8 @@ html.wf-presentation-discrete {
 			
 			h1 {
 		
-				font: 18px/24px "HoeflerText-Black", "Hoefler Text Black", "HoeflerText", "Hoefler Text", "HiraMinProN-W6", sans-serif;
+				font: 18px/24px "Georgia", "HiraMinProN-W6", sans-serif;
+				font-weight: bold;
 				padding: 0px;
 				margin: 0px;
 				
@@ -98,12 +99,12 @@ html.wf-presentation-discrete {
 				text-overflow: ellipsis;
 				height: 24px;
 				-webkit-line-clamp: 1;
-			
+
 			}
 			
 			h2, span.provider {
 			
-				font: 16px/20px "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "HiraKakuProN-W6";
+				font: 16px/20px "HelveticaNeue", "Helvetica Neue", "HiraKakuProN-W6";
 			
 				display: inline;
 				padding: 0px;
