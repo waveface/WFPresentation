@@ -106,19 +106,23 @@ html.wf-presentation-discrete {
 			
 				font: 16px/20px "HelveticaNeue", "Helvetica Neue", "HiraKakuProN-W6";
 			
-				display: inline;
-				padding: 0px;
+				padding: 0 0 0 20px;
 				margin: 0px;
-				
+
+				background-image: url(ProviderIcon.png);
+				background-repeat: no-repeat;
+				background-position: 2px 6px;
+
 				&:after {
 				
-					content: " • ";
+					content: " ";
 				
 				}
+
 				
 				&:empty:after {
 				
-					content: "";
+					content: " ";
 				
 				}
 			

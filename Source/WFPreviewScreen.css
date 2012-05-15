@@ -324,7 +324,7 @@ html.wf-presentation-full-frame .header h1 {
   margin: 0;
   font-size: 1.8em;
   line-height: 1.35em;
-  color: #c66b4b;
+  color: #68b0c5;
   font-weight: bold;
   font-family: "HelveticaNeue-CondensedBold", "HelveticaNeue", "Helvetica Neue", "Arial", sans-serif;
 }
@@ -390,7 +390,8 @@ html.wf-presentation-discrete body .previewContainer .textContainer {
 }
 /* line 91, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer h1 {
-  font: 18px/24px "HoeflerText-Black", "Hoefler Text Black", "HoeflerText", "Hoefler Text", "HiraMinProN-W6", sans-serif;
+  font: 18px/24px "Georgia", "HiraMinProN-W6", sans-serif;
+  font-weight: bold;
   padding: 0px;
   margin: 0px;
   overflow: hidden;
@@ -398,38 +399,40 @@ html.wf-presentation-discrete body .previewContainer h1 {
   height: 24px;
   -webkit-line-clamp: 1;
 }
-/* line 104, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 105, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer h2, html.wf-presentation-discrete body .previewContainer span.provider {
-  font: 16px/20px "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "HiraKakuProN-W6";
-  display: inline;
-  padding: 0px;
+  font: 16px/20px "HelveticaNeue", "Helvetica Neue", "HiraKakuProN-W6";
+  padding: 0 0 0 20px;
   margin: 0px;
+  background-image: url(ProviderIcon.png);
+  background-repeat: no-repeat;
+  background-position: 2px 6px;
 }
-/* line 112, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 116, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer h2:after, html.wf-presentation-discrete body .previewContainer span.provider:after {
-  content: " • ";
+  content: " ";
 }
-/* line 118, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 123, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer h2:empty:after, html.wf-presentation-discrete body .previewContainer span.provider:empty:after {
-  content: "";
+  content: " ";
 }
-/* line 126, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 131, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer p {
   font-family: "Palatino-Roman", "HiraMinProN-W3", serif;
 }
-/* line 134, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 139, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .footer {
   padding-top: 0px;
   padding-bottom: 0px;
   font: 11px/16px "HelveticaNeue-Bold";
   text-align: right;
 }
-/* line 142, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 147, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .footer p {
   margin-right: 20px;
   color: #a0a0a0;
 }
-/* line 154, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 159, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete p {
   margin-bottom: 0px;
 }
