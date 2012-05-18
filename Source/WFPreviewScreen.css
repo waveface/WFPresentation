@@ -343,71 +343,71 @@ html.wf-presentation-full-frame .header h2 + h1, html.wf-presentation-full-frame
 
 /* line 4, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete {
-  background-color: #f2f2f2;
-  padding: 0px;
+  background-color: #f1f1f1;
+  font-size: 17.5px;
   width: 100%;
   height: 100%;
-  font-size: 17.5px;
+  padding: 0px;
 }
-/* line 14, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 11, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body.quoted {
   background: transparent url(WAPreviewQuoteBackdrop.png) no-repeat 4px 1px;
 }
-/* line 16, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 13, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body.quoted .content {
   margin: 32px 32px 6px 32px;
   padding: 0px;
   display: table;
 }
-/* line 21, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 19, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body.quoted .content .textContainer {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 26, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 24, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body.quoted .footer {
   height: 26px;
 }
-/* line 31, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 29, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body {
   margin: 0px;
   font: 1em/1.43em "Fontin Sans Bold", "FontinSans-Bold", "HiraKakuProN-W6", "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro W6", "STHeitiTC-Medium", "STHeitiSC-Medium", sans-serif;
   max-width: 100%;
   height: 100%;
 }
-/* line 40, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 38, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body > div {
   text-overflow: ellipsis;
-  overflow: hdden;
+  overflow: hidden;
 }
-/* line 57, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 55, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body > div.content {
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 8px;
 }
-/* line 63, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 61, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body > div.content p {
   color: #4d4d4d;
 }
-/* line 69, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 67, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body > div.content .textContainer {
   overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: break-word;
   width: auto;
 }
-/* line 88, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 86, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer {
   background: url(WAPreviewStripePattern.png) repeat repeat;
   margin: 8px;
   font: 16px/20px "Palatino";
 }
-/* line 102, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 100, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer .textContainer {
   padding: 8px 8px 0 8px;
 }
-/* line 108, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 106, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer h1 {
   font: 18px/24px "Georgia", "HiraMinProN-W6", sans-serif;
   font-weight: bold;
@@ -418,7 +418,7 @@ html.wf-presentation-discrete body .previewContainer h1 {
   height: 24px;
   -webkit-line-clamp: 1;
 }
-/* line 122, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 120, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer h2, html.wf-presentation-discrete body .previewContainer span.provider {
   font: 16px/20px "HelveticaNeue", "Helvetica Neue", "HiraKakuProN-W6";
   padding: 0 0 0 20px;
@@ -427,31 +427,31 @@ html.wf-presentation-discrete body .previewContainer h2, html.wf-presentation-di
   background-repeat: no-repeat;
   background-position: 2px 6px;
 }
-/* line 133, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 131, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer h2:after, html.wf-presentation-discrete body .previewContainer span.provider:after {
   content: " ";
 }
-/* line 140, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 138, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer h2:empty:after, html.wf-presentation-discrete body .previewContainer span.provider:empty:after {
   content: " ";
 }
-/* line 148, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 146, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer p {
   font-family: "Palatino-Roman", "HiraMinProN-W3", serif;
 }
-/* line 156, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 154, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .footer {
   padding-top: 0px;
   padding-bottom: 0px;
   font: 11px/16px "HelveticaNeue-Bold";
   text-align: right;
 }
-/* line 164, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 162, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .footer p {
   margin-right: 20px;
   color: #a0a0a0;
 }
-/* line 176, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 174, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete p {
   margin-bottom: 0px;
 }

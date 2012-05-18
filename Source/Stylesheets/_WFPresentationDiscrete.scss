@@ -2,22 +2,20 @@
 //	Styles specifically created for discrete previews in the Overview
 
 html.wf-presentation-discrete {
-
-	background-color: brightness(242);
-
-	padding: 0px;
+	background-color: brightness(241);
+	font-size: 17.5px;
 	width: 100%;
 	height: 100%;
-	
-	font-size: 17.5px;
+	padding: 0px;
 
 	body.quoted {
 		background: transparent url(WAPreviewQuoteBackdrop.png) no-repeat 4px 1px;
 		.content {
 			margin: 32px 32px 6px 32px;
 			padding: 0px;
-		
+
 			display: table;
+
 			.textContainer {
 				display: table-cell;
 				vertical-align: middle;
@@ -52,7 +50,7 @@ html.wf-presentation-discrete {
 			// }
 			
 			text-overflow: ellipsis;
-			overflow: hdden;
+			overflow: hidden;
 
 			&.content {
 				
