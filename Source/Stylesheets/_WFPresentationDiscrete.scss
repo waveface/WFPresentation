@@ -10,6 +10,23 @@ html.wf-presentation-discrete {
 	height: 100%;
 	
 	font-size: 17.5px;
+
+	body.quoted {
+		background: transparent url(WAPreviewQuoteBackdrop.png) no-repeat 4px 1px;
+		.content {
+			margin: 32px 32px 6px 32px;
+			padding: 0px;
+		
+			display: table;
+			.textContainer {
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+		.footer {
+			height: 26px
+		}
+	}
 	
 	body {
 	
