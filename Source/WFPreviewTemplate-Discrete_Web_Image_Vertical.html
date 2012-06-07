@@ -7,7 +7,7 @@
 		<meta name="generator" content="Waveface Synergised">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=100%, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
-		<title>$TITLE(AnnotationTop)</title>
+		<title>$TITLE(Vertical_No_Description)</title>
 		
 		<link href="WFPreviewScreen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 		<link href="WFPreviewPrint.css" media="print" rel="stylesheet" type="text/css" />
@@ -22,37 +22,33 @@
 	</head>
 	
 	<body class="box box-orient-vertical">
+		<div class="previewContainer box box-flex flex box-orient-vertical">
+		
+				<div class="imageContainer box-flex wf-centered-image-container" style="width:100%; height: 308px">
 	
-		<div class="content box-flex wf-content-clamp-container" style="max-height: 4.5em;">	
-		
-			<p class="textContainer wf-content-clamp">$BODY</p>
-		
-		</div>
-		
-		<div class="previewContainer box box-flex-2 box-orient-horizontal" style="padding-top: 0px;">
-		
-			<div class="imageContainer wf-centered-image-container" style="width: 50%;">
+					<img src="$PREVIEW_IMAGE" />
 				
-				<img src="$PREVIEW_IMAGE" />
-				
-			</div>
-
-			<div class="textContainer box box-flex box-orient-vertical">
-				
-				<h1>$PREVIEW_TITLE</h1>
-
-				<div class="wf-content-clamp-container box box-flex">
-				
-					<p class="wf-content-clamp"><span class="provider">$PREVIEW_PROVIDER</span>$PREVIEW_BODY</p>
+				</div>
+	
+				<div class="textContainer box box-flex box-orient-vertical">
+					
+					<h1 style="height: 70px;">$PREVIEW_TITLE</h1>
+					
+					<div class="wf-content-clamp-container box-flex">
+	
+						<p class="wf-content-clamp"><span class="provider">$PREVIEW_PROVIDER</span>$PREVIEW_BODY</p>
+					</div>
 				
 				</div>
 			
 			</div>
-						
+			
 		</div>
 
 		<div class="footer">
 			<p>$FOOTER</p>
 		</div>
+
 	</body>
+
 </html>
