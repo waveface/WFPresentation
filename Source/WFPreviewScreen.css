@@ -1,4 +1,4 @@
-/* line 17, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -390,24 +390,28 @@ html.wf-presentation-discrete body > div.content {
 html.wf-presentation-discrete body > div.content p {
   color: #4d4d4d;
 }
-/* line 67, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 65, Stylesheets/_WFPresentationDiscrete.scss */
+html.wf-presentation-discrete body > div.content p.textContainer {
+  white-space: pre-wrap;
+}
+/* line 72, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body > div.content .textContainer {
   overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: break-word;
   width: auto;
 }
-/* line 86, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 91, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer {
   background: url(WAPreviewStripePattern.png) repeat repeat;
   margin: 8px;
   font: 16px/20px "Palatino";
 }
-/* line 100, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 105, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer .textContainer {
   padding: 8px 8px 0 8px;
 }
-/* line 106, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 111, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer h1 {
   font: 18px/24px "Georgia", "HiraMinProN-W6", sans-serif;
   font-weight: bold;
@@ -418,7 +422,7 @@ html.wf-presentation-discrete body .previewContainer h1 {
   height: 24px;
   -webkit-line-clamp: 1;
 }
-/* line 120, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 125, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer h2, html.wf-presentation-discrete body .previewContainer span.provider {
   font: 16px/20px "HelveticaNeue", "Helvetica Neue", "HiraKakuProN-W6";
   padding: 0 0 0 20px;
@@ -427,31 +431,31 @@ html.wf-presentation-discrete body .previewContainer h2, html.wf-presentation-di
   background-repeat: no-repeat;
   background-position: 2px 6px;
 }
-/* line 131, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 136, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer h2:after, html.wf-presentation-discrete body .previewContainer span.provider:after {
   content: " ";
 }
-/* line 138, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 143, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer h2:empty:after, html.wf-presentation-discrete body .previewContainer span.provider:empty:after {
   content: " ";
 }
-/* line 146, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 151, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer p {
   font-family: "Palatino-Roman", "HiraMinProN-W3", serif;
 }
-/* line 154, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 159, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .footer {
   padding-top: 0px;
   padding-bottom: 0px;
   font: 11px/16px "HelveticaNeue-Bold";
   text-align: right;
 }
-/* line 162, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 167, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .footer p {
   margin-right: 20px;
   color: #a0a0a0;
 }
-/* line 174, Stylesheets/_WFPresentationDiscrete.scss */
+/* line 179, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete p {
   margin-bottom: 0px;
 }
