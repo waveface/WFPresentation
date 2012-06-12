@@ -357,11 +357,9 @@ html.wf-presentation-discrete body.quoted {
 html.wf-presentation-discrete body.quoted .content {
   margin: 32px 32px 6px 32px;
   padding: 0px;
-  display: table;
 }
 /* line 19, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body.quoted .content .textContainer {
-  display: table-cell;
   vertical-align: middle;
 }
 /* line 24, Stylesheets/_WFPresentationDiscrete.scss */
