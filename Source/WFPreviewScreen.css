@@ -407,18 +407,18 @@ html.wf-presentation-discrete body .previewContainer {
 }
 /* line 105, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer .textContainer {
-  padding: 8px 8px 0 8px;
+  padding: 8px 8px 8px 8px;
 }
 /* line 111, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer h1 {
   font: 18px/24px "Georgia", "HiraMinProN-W6", sans-serif;
   font-weight: bold;
+  line-height: 1.3;
   padding: 0px;
-  margin: 0px;
+  margin: 0 0 4px 0;
   overflow: hidden;
   text-overflow: ellipsis;
   height: 24px;
-  -webkit-line-clamp: 1;
 }
 /* line 125, Stylesheets/_WFPresentationDiscrete.scss */
 html.wf-presentation-discrete body .previewContainer h2, html.wf-presentation-discrete body .previewContainer span.provider {
@@ -514,19 +514,37 @@ html.wf-presentation-discrete p {
   -webkit-box-orient: vertical;
 }
 
-/* line 75, WFPreviewScreen.scss */
+/* line 74, WFPreviewScreen.scss */
+.wf-content-clamp-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* line 84, WFPreviewScreen.scss */
+.wf-content-clamp-3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* line 94, WFPreviewScreen.scss */
 .wf-centered-image-container {
   overflow: hidden;
   vertical-align: middle;
   position: relative;
 }
-/* line 81, WFPreviewScreen.scss */
+/* line 100, WFPreviewScreen.scss */
 .wf-centered-image-container img {
   position: absolute;
   display: block;
   margin-right: 24px;
 }
-/* line 87, WFPreviewScreen.scss */
+/* line 106, WFPreviewScreen.scss */
 .wf-centered-image-container img[src=""] {
   display: none;
 }
