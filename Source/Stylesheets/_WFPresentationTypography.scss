@@ -198,6 +198,16 @@ table {
 		
 	}
 
+	&.small-table {
+		tr, th, td {
+			border-top: 1px solid brightness(180);
+			border-left: 1px solid brightness(180);
+			border-bottom: 1px solid brightness(180);
+			border-right: 1px solid brightness(180);
+			padding: 0.5em 1.625em 0.5em 1em;
+			height: 2em;
+		}
+	}
 }
 
 pre, xmp, plaintext, listing, code {

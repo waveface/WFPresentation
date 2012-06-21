@@ -210,8 +210,17 @@ table tr, table th, table td {
 table tfoot {
   font-style: italic;
 }
+/* line 202, Stylesheets/_WFPresentationTypography.scss */
+table.small-table tr, table.small-table th, table.small-table td {
+  border-top: 1px solid #b4b4b4;
+  border-left: 1px solid #b4b4b4;
+  border-bottom: 1px solid #b4b4b4;
+  border-right: 1px solid #b4b4b4;
+  padding: 0.5em 1.625em 0.5em 1em;
+  height: 2em;
+}
 
-/* line 203, Stylesheets/_WFPresentationTypography.scss */
+/* line 213, Stylesheets/_WFPresentationTypography.scss */
 pre, xmp, plaintext, listing, code {
   font-family: "Courier", Courier, monospace;
   overflow-x: auto;
@@ -219,22 +228,22 @@ pre, xmp, plaintext, listing, code {
   white-space: pre-wrap;
 }
 
-/* line 213, Stylesheets/_WFPresentationTypography.scss */
+/* line 223, Stylesheets/_WFPresentationTypography.scss */
 p {
   margin-bottom: 0.8125em;
   color: #111;
   font-weight: 300;
 }
-/* line 219, Stylesheets/_WFPresentationTypography.scss */
+/* line 229, Stylesheets/_WFPresentationTypography.scss */
 p + p {
   text-indent: 1.625em;
 }
-/* line 223, Stylesheets/_WFPresentationTypography.scss */
+/* line 233, Stylesheets/_WFPresentationTypography.scss */
 p + p img {
   text-indent: -1.625em;
 }
 
-/* line 233, Stylesheets/_WFPresentationTypography.scss */
+/* line 243, Stylesheets/_WFPresentationTypography.scss */
 p img, a img {
   display: block;
   margin-left: auto;
@@ -251,7 +260,7 @@ p img, a img {
   margin-bottom: 3em;
 }
 
-/* line 253, Stylesheets/_WFPresentationTypography.scss */
+/* line 263, Stylesheets/_WFPresentationTypography.scss */
 blockquote {
   padding: 0 1em 0 1em;
   margin: 1em 0 1.625em 0;
@@ -259,53 +268,53 @@ blockquote {
   font-style: italic;
   border-left: 4px solid silver;
 }
-/* line 263, Stylesheets/_WFPresentationTypography.scss */
+/* line 273, Stylesheets/_WFPresentationTypography.scss */
 blockquote > p {
   margin: 0;
   padding: 0;
 }
 
-/* line 272, Stylesheets/_WFPresentationTypography.scss */
+/* line 282, Stylesheets/_WFPresentationTypography.scss */
 pre, code, tt {
   font: 1em "Courier", Courier, monospace;
   line-height: 1.375em;
 }
 
-/* line 279, Stylesheets/_WFPresentationTypography.scss */
+/* line 289, Stylesheets/_WFPresentationTypography.scss */
 pre, code {
   display: block;
   margin: 1.625em 0;
   white-space: pre-wrap;
 }
 
-/* line 287, Stylesheets/_WFPresentationTypography.scss */
+/* line 297, Stylesheets/_WFPresentationTypography.scss */
 pre code {
   margin-left: 0em;
 }
 
-/* line 293, Stylesheets/_WFPresentationTypography.scss */
+/* line 303, Stylesheets/_WFPresentationTypography.scss */
 tt {
   display: block;
   margin: 1.625em 0;
 }
 
-/* line 299, Stylesheets/_WFPresentationTypography.scss */
+/* line 309, Stylesheets/_WFPresentationTypography.scss */
 ul, ol, dl {
   list-style-position: outside;
   margin: 0 0 1.625em 0;
 }
 
-/* line 306, Stylesheets/_WFPresentationTypography.scss */
+/* line 316, Stylesheets/_WFPresentationTypography.scss */
 dl dt {
   font-weight: bold;
 }
 
-/* line 312, Stylesheets/_WFPresentationTypography.scss */
+/* line 322, Stylesheets/_WFPresentationTypography.scss */
 dl dd {
   margin-left: 1.625em;
 }
 
-/* line 318, Stylesheets/_WFPresentationTypography.scss */
+/* line 328, Stylesheets/_WFPresentationTypography.scss */
 hr {
   margin-bottom: 1.625em;
 }
