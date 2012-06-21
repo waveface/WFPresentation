@@ -93,7 +93,7 @@ h5, h6 {
 a {
 
 	color: brightness(64);
-	font-weight: bold;
+	//font-weight: bold;
 	text-decoration: underline;
 
 	&:hover {
@@ -153,7 +153,6 @@ caption {
 }
 
 table {
-
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.625em;
@@ -164,21 +163,15 @@ table {
 	
 		td {
 	
-			border-bottom: 1px solid brightness(220);
-			border-spacing: 0px;
-		
+			border: 1px solid brightness(180);
+			//border-spacing: 0px;
+
 		}
 	
 		th {
 			
 			font-weight:bold;
-			border-bottom: 2px solid brightness(180);
-		
-		}
-		
-		&:last-child {
-		
-			border-bottom: 2px solid brightness(180);
+			border: 1px solid brightness(180);
 		
 		}
 		
@@ -187,8 +180,7 @@ table {
 	tr, th, td {
 	
 		margin: 0;
-		padding: 0 1.625em 0 1em;
-		height: 2.25em;
+		padding: 0.3em 0.8125em 0.3em 0.5em;
 	
 	}
 	
@@ -198,16 +190,6 @@ table {
 		
 	}
 
-	&.small-table {
-		tr, th, td {
-			border-top: 1px solid brightness(180);
-			border-left: 1px solid brightness(180);
-			border-bottom: 1px solid brightness(180);
-			border-right: 1px solid brightness(180);
-			padding: 0.5em 1.625em 0.5em 1em;
-			height: 2em;
-		}
-	}
 }
 
 pre, xmp, plaintext, listing, code {
@@ -309,7 +291,19 @@ tt {
 ul, ol, dl {
 
 	list-style-position: outside;
-	margin: 0 0 1.625em 0;
+	margin: 0 0 1.625em 1.625em;
+
+}
+
+ul {
+
+	list-style-type: disc;
+
+}
+
+ol {
+
+	list-style-type: decimal;
 
 }
 
