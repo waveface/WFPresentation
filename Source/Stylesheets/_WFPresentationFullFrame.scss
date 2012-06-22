@@ -3,7 +3,7 @@
 
 html.wf-presentation-full-frame {
 
-	padding: 3em 2em 2em 2em;
+	padding: 3em 4em 4em 4em;
 
 	.header {
 	
@@ -27,7 +27,7 @@ html.wf-presentation-full-frame {
 		
 		h2 {
 		
-			padding: 0;
+			padding: 0 0 0 20px;
 			margin: 0;
 			
 			font-size: 0.85em;
@@ -35,7 +35,11 @@ html.wf-presentation-full-frame {
 			font-family: "HelveticaNeue-Light", "HelveticaNeue", "Helvetica Neue", sans-serif;
 			
 			color: brightness(146);
-			
+
+			background-image: url(ProviderIcon.png);
+			background-repeat: no-repeat;
+			background-position: 2px 14px;
+
 		}
 		
 		h2 + h1, h1 + h2 {

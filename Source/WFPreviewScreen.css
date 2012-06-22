@@ -180,31 +180,32 @@ caption {
 
 /* line 155, Stylesheets/_WFPresentationTypography.scss */
 table {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.625em;
   border-collapse: collapse;
 }
-/* line 164, Stylesheets/_WFPresentationTypography.scss */
+/* line 165, Stylesheets/_WFPresentationTypography.scss */
 table tr td {
   border: 1px solid #b4b4b4;
 }
-/* line 171, Stylesheets/_WFPresentationTypography.scss */
+/* line 172, Stylesheets/_WFPresentationTypography.scss */
 table tr th {
   font-weight: bold;
   border: 1px solid #b4b4b4;
 }
-/* line 180, Stylesheets/_WFPresentationTypography.scss */
+/* line 181, Stylesheets/_WFPresentationTypography.scss */
 table tr, table th, table td {
   margin: 0;
   padding: 0.3em 0.8125em 0.3em 0.5em;
 }
-/* line 187, Stylesheets/_WFPresentationTypography.scss */
+/* line 188, Stylesheets/_WFPresentationTypography.scss */
 table tfoot {
   font-style: italic;
 }
 
-/* line 195, Stylesheets/_WFPresentationTypography.scss */
+/* line 196, Stylesheets/_WFPresentationTypography.scss */
 pre, xmp, plaintext, listing, code {
   font-family: "Courier", Courier, monospace;
   overflow-x: auto;
@@ -212,22 +213,14 @@ pre, xmp, plaintext, listing, code {
   white-space: pre-wrap;
 }
 
-/* line 205, Stylesheets/_WFPresentationTypography.scss */
+/* line 206, Stylesheets/_WFPresentationTypography.scss */
 p {
-  margin-bottom: 0.8125em;
+  margin-bottom: 1.625em;
   color: #111;
   font-weight: 300;
 }
-/* line 211, Stylesheets/_WFPresentationTypography.scss */
-p + p {
-  text-indent: 1.625em;
-}
-/* line 215, Stylesheets/_WFPresentationTypography.scss */
-p + p img {
-  text-indent: -1.625em;
-}
 
-/* line 225, Stylesheets/_WFPresentationTypography.scss */
+/* line 214, Stylesheets/_WFPresentationTypography.scss */
 p img, a img {
   display: block;
   margin-left: auto;
@@ -244,7 +237,7 @@ p img, a img {
   margin-bottom: 3em;
 }
 
-/* line 245, Stylesheets/_WFPresentationTypography.scss */
+/* line 234, Stylesheets/_WFPresentationTypography.scss */
 blockquote {
   padding: 0 1em 0 1em;
   margin: 1em 0 1.625em 0;
@@ -252,70 +245,71 @@ blockquote {
   font-style: italic;
   border-left: 4px solid silver;
 }
-/* line 255, Stylesheets/_WFPresentationTypography.scss */
+/* line 244, Stylesheets/_WFPresentationTypography.scss */
 blockquote > p {
   margin: 0;
   padding: 0;
 }
 
-/* line 264, Stylesheets/_WFPresentationTypography.scss */
+/* line 253, Stylesheets/_WFPresentationTypography.scss */
 pre, code, tt {
   font: 1em "Courier", Courier, monospace;
   line-height: 1.375em;
 }
 
-/* line 271, Stylesheets/_WFPresentationTypography.scss */
+/* line 260, Stylesheets/_WFPresentationTypography.scss */
 pre, code {
   display: block;
   margin: 1.625em 0;
   white-space: pre-wrap;
 }
 
-/* line 279, Stylesheets/_WFPresentationTypography.scss */
+/* line 268, Stylesheets/_WFPresentationTypography.scss */
 pre code {
   margin-left: 0em;
 }
 
-/* line 285, Stylesheets/_WFPresentationTypography.scss */
+/* line 274, Stylesheets/_WFPresentationTypography.scss */
 tt {
   display: block;
   margin: 1.625em 0;
 }
 
-/* line 291, Stylesheets/_WFPresentationTypography.scss */
+/* line 280, Stylesheets/_WFPresentationTypography.scss */
 ul, ol, dl {
   list-style-position: outside;
   margin: 0 0 1.625em 1.625em;
+  word-wrap: break-word;
 }
 
-/* line 298, Stylesheets/_WFPresentationTypography.scss */
+/* line 288, Stylesheets/_WFPresentationTypography.scss */
 ul {
   list-style-type: disc;
 }
 
-/* line 304, Stylesheets/_WFPresentationTypography.scss */
+/* line 294, Stylesheets/_WFPresentationTypography.scss */
 ol {
   list-style-type: decimal;
 }
 
-/* line 310, Stylesheets/_WFPresentationTypography.scss */
+/* line 300, Stylesheets/_WFPresentationTypography.scss */
 dl dt {
   font-weight: bold;
 }
 
-/* line 316, Stylesheets/_WFPresentationTypography.scss */
+/* line 306, Stylesheets/_WFPresentationTypography.scss */
 dl dd {
   margin-left: 1.625em;
 }
 
-/* line 322, Stylesheets/_WFPresentationTypography.scss */
+/* line 312, Stylesheets/_WFPresentationTypography.scss */
 hr {
   margin-bottom: 1.625em;
 }
 
 /* line 4, Stylesheets/_WFPresentationFullFrame.scss */
 html.wf-presentation-full-frame {
-  padding: 3em 2em 2em 2em;
+  padding: 3em 4em 4em 4em;
 }
 /* line 8, Stylesheets/_WFPresentationFullFrame.scss */
 html.wf-presentation-full-frame .header {
@@ -333,13 +327,16 @@ html.wf-presentation-full-frame .header h1 {
 }
 /* line 28, Stylesheets/_WFPresentationFullFrame.scss */
 html.wf-presentation-full-frame .header h2 {
-  padding: 0;
+  padding: 0 0 0 20px;
   margin: 0;
   font-size: 0.85em;
   font-family: "HelveticaNeue-Light", "HelveticaNeue", "Helvetica Neue", sans-serif;
   color: #929292;
+  background-image: url(ProviderIcon.png);
+  background-repeat: no-repeat;
+  background-position: 2px 14px;
 }
-/* line 41, Stylesheets/_WFPresentationFullFrame.scss */
+/* line 45, Stylesheets/_WFPresentationFullFrame.scss */
 html.wf-presentation-full-frame .header h2 + h1, html.wf-presentation-full-frame .header h1 + h2 {
   padding-top: 0.25em;
 }
