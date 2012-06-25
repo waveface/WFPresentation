@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13BDCB5615946CC40040A1B2 /* GTMNSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = 13BDCB5415946CC40040A1B2 /* GTMNSString+HTML.h */; };
+		13BDCB5715946CC40040A1B2 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BDCB5515946CC40040A1B2 /* GTMNSString+HTML.m */; };
+		13BDCB5A15946D160040A1B2 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 13BDCB5915946D160040A1B2 /* GTMDefines.h */; };
 		FF7120FB1545501F00F64AB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7120FA1545501F00F64AB7 /* Foundation.framework */; };
 		FF7121011545501F00F64AB7 /* WFPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7121001545501F00F64AB7 /* WFPresentation.m */; };
 		FF7121091545502000F64AB7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7121081545502000F64AB7 /* SenTestingKit.framework */; };
@@ -33,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13BDCB5415946CC40040A1B2 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		13BDCB5515946CC40040A1B2 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		13BDCB5915946D160040A1B2 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		FF7120F71545501F00F64AB7 /* libWFPresentation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWFPresentation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7120FA1545501F00F64AB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FF7120FE1545501F00F64AB7 /* WFPresentation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WFPresentation-Prefix.pch"; sourceTree = "<group>"; };
@@ -104,6 +110,9 @@
 		FF7120FC1545501F00F64AB7 /* WFPresentation */ = {
 			isa = PBXGroup;
 			children = (
+				13BDCB5915946D160040A1B2 /* GTMDefines.h */,
+				13BDCB5415946CC40040A1B2 /* GTMNSString+HTML.h */,
+				13BDCB5515946CC40040A1B2 /* GTMNSString+HTML.m */,
 				FF7120FF1545501F00F64AB7 /* WFPresentation.h */,
 				FF7121001545501F00F64AB7 /* WFPresentation.m */,
 				FF7121241545506600F64AB7 /* WFPresentationTemplate.h */,
@@ -152,6 +161,8 @@
 			files = (
 				FF7121261545506600F64AB7 /* WFPresentationTemplate.h in Headers */,
 				FF71212D154550B100F64AB7 /* WFPresentationTemplate+Caching.h in Headers */,
+				13BDCB5615946CC40040A1B2 /* GTMNSString+HTML.h in Headers */,
+				13BDCB5A15946D160040A1B2 /* GTMDefines.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +266,7 @@
 				FF7121011545501F00F64AB7 /* WFPresentation.m in Sources */,
 				FF7121271545506600F64AB7 /* WFPresentationTemplate.m in Sources */,
 				FF71212E154550B100F64AB7 /* WFPresentationTemplate+Caching.m in Sources */,
+				13BDCB5715946CC40040A1B2 /* GTMNSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

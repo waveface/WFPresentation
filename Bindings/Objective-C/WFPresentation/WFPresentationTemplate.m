@@ -10,6 +10,7 @@
 #import "WFPresentationTemplate+SubclassEyesOnly.h"
 #import "WFPresentationTemplate+Caching.h"
 
+#import "GTMNSString+HTML.h"
 
 @interface WFPresentationTemplate ()
 
@@ -119,8 +120,8 @@
 	[vars enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSString *value, BOOL *stop) {
 	
 		NSRange const range = (NSRange){ 0, [replacementString length] };
-		
-		replacementString = [replacementString stringByReplacingOccurrencesOfString:key withString:value options:options range:range];
+
+		replacementString = [replacementString stringByReplacingOccurrencesOfString:key withString:[value gtm_stringByEscapingForHTML] options:options range:range];
 	
 	}];
 	
